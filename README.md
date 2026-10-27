@@ -12,13 +12,16 @@ Feed URL: `https://raw.githubusercontent.com/theokri105/Kalender/main/plan.ics`
 
 (Source: Apple Support, "Add calendar subscriptions in iCloud", support.apple.com/102301.)
 
-If the repository's default branch is not `main`, open `plan.ics` on GitHub, click **Raw** and use that URL instead.
+The wake-up events carry an alert. Apple Calendar removes alerts from subscribed calendars unless the **Remove → Alerts**
+box is unticked (Mac: select the calendar → Edit → Get Info). Source: Calendar User Guide for Mac, "Subscribe to calendars".
 
 ## Update the plan
 
 1. Edit the `KEY DATES` block (or `SPECIAL` days) in `build_calendar.py`.
    - SOC1 exam date known → set `SOC1_EXAM`, `SOC1_EXAM_TIME`, `SOC1_EXAM_CONFIRMED = True`.
      The three prep days move with it automatically.
+   - Before re-planning, move `FREEZE_DATE` to the first day that may change and set `LOCKED` to how far each
+     course had been planned before that day, so blocks that are already in the past keep their content.
 2. `python3 build_calendar.py`
 3. Commit and push `build_calendar.py` and `plan.ics`. Subscribed calendars pick up the change on their next refresh.
 
@@ -26,34 +29,41 @@ Claude has push access to this repository (GitHub connected 27.10.2026) and push
 Fallback if that access is ever lost: Claude sends a new `plan.ics` (and `build_calendar.py`), and Stig uploads them over
 the old files (GitHub → Add file → Upload files → Commit changes). The subscription URL stays the same.
 
-## Rules agreed with Stig (latest instruction wins)
+## Rules agreed with Stig (latest instruction wins – last changed 27.10.2026)
 
-**Weekdays before 23.11 (07:00 days):** wake 05:15 · run 05:35–06:15 · shower + to NHH · sal 07:00–18:00 ·
-run 18:30–19:10 · dinner 19:10–19:50 · bed 20:00. No weekday gym (gym opens 06:00) – Stig will place strength training himself.
+**Weekdays before 23.11:** wake 05:15 (alert) · run 05:35–06:15 · shower + to NHH · sal 07:00–19:00 Mon–Thu,
+07:00–18:00 Fri · bed 20:00. No running after school, no dinner block.
 
-**Sal order:** TECH1 first → TECH2 in the middle → BUD1 last (2 h). 30 min break at every change of course,
-20 min break before every lecture (two back-to-back lectures only allow 15 min). Lunch is self-managed.
+**Workout on weekdays:** 2 h "Være på gymmen" inside the school day, around 11:30–13:30. It is placed where TECH1 ends
+(10:30–12:30) so it also serves as the course-change break, and moved around lectures and workshops.
 
-**Weekends before 23.11:** no wake-up block · gym 08:00–09:15 · sal 10:00–16:00 = TECH1 1 h + one other course 1 h
-+ 3 h "Gå igjennom der du henger etter" · Sunday cleaning 16:30–17:30 · run 18:30 · dinner · bed 20:00.
+**Sal order:** TECH1 → workout → TECH2 → 30 min break → BUD1. 30 min break at every change of course, 20 min before every
+lecture (15 min where two fixed events sit back to back). Lunch is self-managed.
+
+**Cuts from the new structure:** ±30 min per course is fine; courses with an exam coming up are not cut. TECH1 and TECH2
+keep their time; BUD1 (exam furthest away) absorbs the cut: 1.5 h Mon–Thu, 1 h Fri.
+
+**Weekends before 23.11:** no wake-up block · gym 08:00–09:15 · no running · sal 10:00–16:00 = TECH1 1 h + one other
+course 1 h + 3 h "Gå igjennom der du henger etter" · Sunday cleaning 16:30–17:30 · bed 20:00.
 
 **TECH1:** non-chapter work 27–28.10; Sydsæter sections (outline syllabus, no 9.4, no 12.10) evenly 29.10–22.11;
 26–30.11 mock exams + filling gaps only. Exam 1.12.
 
-**TECH2:** no self-study in week 44 – replaced by TECH1 on 27 and 29.10 (lecture 28.10 and workshop 30.10 kept);
-from 2.11 2.5 h/day rising to 4 h/day until 18.11, review 19–22.11, home exam 23–25.11 (nothing else, no run),
+**TECH2:** no self-study in week 44 – replaced by TECH1 (lecture 28.10 and workshop 30.10 kept);
+from 2.11 2.5 h/day rising to 4 h/day until 18.11, review 19–22.11, home exam 23–25.11 (nothing else),
 then no TECH2 until after the BUD1 exam; full focus 10–15.12. Exam 16.12. Lectures (Wed) and workshops (Fri) are blocked.
 
 **BUD1:** Drury ch. 1–10, 12, 14–16 evenly by pages 27.10–20.11 (must be done by 23.11); 26–30.11 only 30 min revision
 19:30–20:00; 2–8.12 7 h/day mock exams (rest of the day = catch-up); exam 9.12 09:00–12:00.
 
 **SOC1:** reflection note 2 on Sat 31.10; oral exam date is a placeholder (16.11); the 3 days before the exam:
-SOC1 takes half of the sal time.
+SOC1 takes about half of the sal time (4 h 45 on a weekday, 3 h on a weekend day).
 
 **COM1:** EA3 draft Fri 30.10, revision Sat 7.11 (after CA1 feedback), EA1 (4 h) + portfolio submission Sat 21.11
 (moved earlier because TECH1 has priority). Deadline 27.11 12:00.
 
-**From 23.11 to 16.12:** wake 05:00 · sal 06:00–17:30 (weekends to 17:00) · run 18:20–19:00 · dinner · bed 20:00 ·
-no gym · Sunday cleaning 17:30–18:20.
+**From 23.11 to 16.12:** wake 05:00 (alert) · sal 06:00–19:00 Mon–Thu, 06:00–17:30 Fri, 06:00–17:00 weekends ·
+workout 11:30–13:30 Mon–Fri, except Fri 27.11 and Fri 11.12 (TECH1/TECH2 exam days later that week would lose 2 h) ·
+no gym on weekends · no running · Sunday cleaning 17:30–18:30 · bed 20:00.
 
-**Exam days:** only the exam, dinner and bed – rest of the day off. Deadlines override everything.
+**Exam days:** only the exam and bedtime – rest of the day off. Deadlines override everything.

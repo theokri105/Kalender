@@ -32,7 +32,13 @@ TECH1_EXAM = date(2026, 12, 1)
 BUD1_EXAM = date(2026, 12, 9)         # 09:00-12:00 (BUD1-plan)
 TECH2_EXAM = date(2026, 12, 16)
 
-FINAL_START = date(2026, 11, 23)      # sal 06:00-17:30 (helg 17:00), ingen gym
+FINAL_START = date(2026, 11, 23)
+
+# Innhold i blokker som allerede er passert låses, så de ikke får nytt innhold når planen endres.
+# Ved hver ny endring: sett FREEZE_DATE til første dag som skal planlegges på nytt, og LOCKED til
+# hvor langt hvert fag var planlagt før den dagen (BUD1 i sider, TECH1 i seksjonsvekt, TECH2 i ukeemner).
+FREEZE_DATE = date(2026, 10, 28)
+LOCKED = {"BUD1": 25, "TECH1": 0.0, "TECH2": 0.0}   # 27.10: BUD1 kap. 1 (s. 4-28)      # sal 06:00-17:30 (helg 17:00), ingen gym
 TECH1_CHAPTERS_FROM = date(2026, 10, 29)
 TECH2_REVIEW_FROM = date(2026, 11, 19)
 
@@ -290,6 +296,7 @@ class Ev:
     kind: str = ""             # TECH1, TECH2, BUD1, SOC1, COM1, CATCHUP, PAUSE, LECT, RUN, GYM, ROUTINE, EXAM, MARK
     queue: str | None = None   # TECH1 / TECH2 / BUD1 -> innhold fylles inn automatisk
     days: int = 1              # varighet for heldagshendelser
+    alarm: bool = False        # varsel ved start (VALARM)
 
 
 def mins(hm: str) -> int:
@@ -306,8 +313,11 @@ CATCHUP_DESC = ("Fyll hull fra uka: det du ikke rakk, det du ikke forsto, "
 PAUSE_DESC = {
     "P": "30 min buffer ved fagbytte (pusterom hvis noe tar lengre tid).",
     "P20": "20 min pause før forelesning.",
-    "P15": "Bare 15 min mellom to faste forelesninger - kan ikke gjøres lengre.",
+    "P15": "Bare 15 min før neste faste økt - kan ikke gjøres lengre.",
 }
+WORKOUT_DESC = ("Treningspause (styrke), 2 t. Normalt rundt 11:30-13:30; flyttes rundt "
+                "forelesninger og workshops, og legges der et fag slutter så den også er "
+                "pausen ved fagbytte.")
 TECH2_REVIEW = ("Grinde på SAL: TECH2 - repetisjon og øving før hjemmeeksamen",
                 "Hjemmeeksamen 23.-25.11 (3 dager, grupper på 2-3, 30 %). "
                 "Gå gjennom uke 34-45 og gjør øvingsarkene på nytt der du er usikker. "
@@ -333,6 +343,8 @@ def sal(d: date, spec: list) -> list[Ev]:
             out.append(Ev(d, s, e, "", kind="BUD1", queue="BUD1"))
         elif t == "C":
             out.append(Ev(d, s, e, "Gå igjennom der du henger etter", CATCHUP_DESC, kind="CATCHUP"))
+        elif t == "W":
+            out.append(Ev(d, s, e, "Være på gymmen", WORKOUT_DESC, kind="GYM"))
         else:  # "X" eller "L": ferdig tekst
             out.append(Ev(d, s, e, x["title"], x.get("desc", ""), kind=x["kind"]))
     return out
@@ -348,18 +360,16 @@ def L(s, e, title, desc):
 
 # --- rutiner ---------------------------------------------------------------
 def morning_normal(d):
-    return [Ev(d, "05:15", "05:35", "Våkne for faen - Grindetid", kind="ROUTINE"),
+    return [Ev(d, "05:15", "05:35", "Våkne for faen - Grindetid", kind="ROUTINE", alarm=True),
             Ev(d, "05:35", "06:15", "Løpetur", kind="RUN"),
             Ev(d, "06:15", "07:00", "Dusj og til NHH", kind="ROUTINE")]
 
 
-def evening_normal(d, run=True, clean=False):
+def evening_normal(d, clean=False):
+    """Ingen løping etter skolen og ingen middagsblokk (endret 27.10)."""
     out = []
     if clean:
         out.append(Ev(d, "16:30", "17:30", "Rengjøring", kind="ROUTINE"))
-    if run:
-        out.append(Ev(d, "18:30", "19:10", "Løpetur", kind="RUN"))
-    out.append(Ev(d, "19:10", "19:50", "Middag", "Dusj, lag middag og spis.", kind="ROUTINE"))
     out.append(Ev(d, "20:00", "20:15", "Leggetid", "I seng kl. 20:00.", kind="ROUTINE"))
     return out
 
@@ -369,37 +379,40 @@ def gym(d):
 
 
 def morning_final(d):
-    return [Ev(d, "05:00", "05:20", "Våkne for faen - Grindetid", kind="ROUTINE"),
+    return [Ev(d, "05:00", "05:20", "Våkne for faen - Grindetid", kind="ROUTINE", alarm=True),
             Ev(d, "05:20", "06:00", "Til NHH", kind="ROUTINE")]
 
 
-def evening_final(d, run=True, clean=False, bud_rev=None):
+def evening_final(d, clean=False, bud_rev=None):
+    """Ingen løping og ingen middagsblokk (endret 27.10)."""
     out = []
     if clean:
-        out.append(Ev(d, "17:30", "18:20", "Rengjøring",
-                      "Ønsket 1 time, men bare 50 min får plass før løpeturen.", kind="ROUTINE"))
-    if run:
-        out.append(Ev(d, "18:20", "19:00", "Løpetur", kind="RUN"))
+        out.append(Ev(d, "17:30", "18:30", "Rengjøring", kind="ROUTINE"))
     if bud_rev:
-        out.append(Ev(d, "19:00", "19:30", "Middag", "Dusj, lag middag og spis.", kind="ROUTINE"))
         out.append(Ev(d, "19:30", "20:00", f"BUD1 - repetisjon: {bud_rev}",
                       "30 min repetisjon hjemme. Ikke nytt stoff - BUD1 har ingen arbeidstid på dagtid denne uka.",
                       kind="BUD1REV"))
-    elif run:
-        out.append(Ev(d, "19:00", "19:40", "Middag", "Dusj, lag middag og spis.", kind="ROUTINE"))
-    else:
-        out.append(Ev(d, "18:00", "18:40", "Middag", "Lag middag og spis.", kind="ROUTINE"))
     out.append(Ev(d, "20:00", "20:15", "Leggetid", "I seng kl. 20:00.", kind="ROUTINE"))
     return out
 
 
 # --- standarddager -----------------------------------------------------------
 def weekday_spec(d):
-    """07:00-18:00: TECH1 -> TECH2 -> BUD1 (2 t til slutt), 30 min pause ved fagbytte."""
-    t1_end = mins("15:00") - int(tech2_hours(d) * 60)
-    return [("07:00", hm(t1_end), "T1"), (hm(t1_end), hm(t1_end + 30), "P"),
-            (hm(t1_end + 30), "15:30", "T2"), ("15:30", "16:00", "P"),
-            ("16:00", "18:00", "B")]
+    """Man-tor 07:00-19:00, fre 07:00-18:00: TECH1 -> trening (2 t) -> TECH2 -> pause -> BUD1.
+
+    Treningen legges der TECH1 slutter (mellom 10:30 og 12:30), så den også er pausen ved
+    fagbytte. TECH1 og TECH2 beholder tiden sin (TECH2 har nærmeste eksamen); BUD1, som har
+    eksamen lengst unna, tar kuttet: 1,5 t man-tor. Fredag: TECH1 -30 min og BUD1 1 t.
+    """
+    d2 = int(tech2_hours(d) * 60)
+    if d.weekday() <= 3:
+        w, end = mins("15:00") - d2, mins("19:00")
+    else:
+        w, end = mins("14:30") - d2, mins("18:00")
+    t2_end = w + 120 + d2
+    return [("07:00", hm(w), "T1"), (hm(w), hm(w + 120), "W"),
+            (hm(w + 120), hm(t2_end), "T2"), (hm(t2_end), hm(t2_end + 30), "P"),
+            (hm(t2_end + 30), hm(end), "B")]
 
 
 def weekend_spec(d):
@@ -435,8 +448,8 @@ SPECIAL = {
     ],
     # Uke 44: all TECH2-egenjobbing byttet til TECH1 (forelesning og workshop beholdes)
     date(2026, 10, 29): [
-        ("07:00", "13:00", "T1"), ("13:00", "15:30", "T1"),
-        ("15:30", "16:00", "P"), ("16:00", "18:00", "B"),
+        ("07:00", "11:30", "T1"), ("11:30", "13:30", "W"), ("13:30", "17:00", "T1"),
+        ("17:00", "17:30", "P"), ("17:30", "19:00", "B"),
     ],
     date(2026, 10, 28): [
         X("07:00", "07:55", "Grinde på SAL: TECH1 - forbered TA-økten (problemsett)",
@@ -444,14 +457,14 @@ SPECIAL = {
         ("07:55", "08:15", "P20"),
         L("08:15", "10:00", "Forelesning TECH2 - uke 44: Concatenating and merging",
           "Onsdager 08:15-10:00 (TECH2 course outline)."),
-        ("10:00", "10:30", "P"),
-        X("10:30", "11:55", "Grinde på SAL: TECH1 - forbered TA-økten (problemsett)",
-          TECH1_NOCH, "TECH1"),
-        ("11:55", "12:15", "P20"),
+        ("10:00", "12:00", "W"),
+        ("12:00", "12:15", "P15"),
         L("12:15", "14:00", "Forelesning COM1 (gruppe 1) - uke 44", COM1_W44),
         ("14:00", "14:30", "P"), ("14:30", "15:55", "B"), ("15:55", "16:15", "P20"),
         L("16:15", "18:00", "TA-økt TECH1 (siste)",
           "Du har allerede kursgodkjenning (4 av 6), men tar denne siste."),
+        X("18:00", "19:00", "Grinde på SAL: TECH1 - gå gjennom TA-økten",
+          TECH1_NOCH + " Gå gjennom oppgavene fra TA-økten mens de er ferske.", "TECH1"),
     ],
     date(2026, 10, 30): [
         X("07:00", "09:55", "Grinde på SAL: COM1 - EA3 refleksjonstekst: første utkast",
@@ -468,8 +481,7 @@ SPECIAL = {
         ("12:00", "12:15", "P15"),
         L("12:15", "14:00", "Workshop TECH2 - uke 44",
           "Fredager 12:15-14:00 (TECH2 course outline)."),
-        ("14:00", "14:30", "P"), ("14:30", "15:30", "T1"), ("15:30", "16:00", "P"),
-        ("16:00", "18:00", "B"),
+        ("14:00", "16:00", "W"), ("16:00", "18:00", "B"),
     ],
     date(2026, 11, 2): [
         ("07:00", "09:55", "T1"), ("09:55", "10:15", "P20"),
@@ -478,8 +490,8 @@ SPECIAL = {
           "forhånd. (BUD1-plan)"),
         ("12:00", "12:15", "P15"),
         L("12:15", "14:00", "Forelesning COM1 (gruppe 1) - uke 45", COM1_W45),
-        ("14:00", "14:30", "P"), ("14:30", "15:30", "T1"), ("15:30", "16:00", "P"),
-        ("16:00", "18:00", "T2"),
+        ("14:00", "16:00", "W"), ("16:00", "18:00", "T2"), ("18:00", "18:30", "P"),
+        ("18:30", "19:00", "T1"),
     ],
     date(2026, 11, 4): [
         ("07:00", "07:55", "T1"), ("07:55", "08:15", "P20"),
@@ -487,14 +499,14 @@ SPECIAL = {
           "Onsdager 08:15-10:00 (TECH2 course outline)."),
         ("10:00", "10:30", "P"), ("10:30", "11:55", "T1"), ("11:55", "12:15", "P20"),
         L("12:15", "14:00", "Forelesning COM1 (gruppe 1) - uke 45", COM1_W45),
-        ("14:00", "14:30", "P"), ("14:30", "15:30", "T2"), ("15:30", "16:00", "P"),
-        ("16:00", "18:00", "B"),
+        ("14:00", "16:00", "W"), ("16:00", "17:00", "T2"), ("17:00", "17:30", "P"),
+        ("17:30", "19:00", "B"),
     ],
     date(2026, 11, 6): [
         ("07:00", "11:55", "T1"), ("11:55", "12:15", "P20"),
         L("12:15", "14:00", "Workshop TECH2 - uke 45",
           "Fredager 12:15-14:00 (TECH2 course outline)."),
-        ("14:00", "15:30", "T2"), ("15:30", "16:00", "P"), ("16:00", "18:00", "B"),
+        ("14:00", "15:00", "T2"), ("15:00", "17:00", "W"), ("17:00", "18:00", "B"),
     ],
     date(2026, 11, 9): [
         ("07:00", "11:25", "T1"), ("11:25", "11:55", "P"), ("11:55", "13:55", "T2"),
@@ -502,14 +514,14 @@ SPECIAL = {
         L("14:15", "16:00", "SOC1 - posterpresentasjon (obligatorisk)",
           "Obligatorisk - gi beskjed på e-post på forhånd hvis du ikke kan møte (SOC1-plan). "
           "Tid antatt ut fra fast SOC1-tid mandag 14:15-16:00 - sjekk TimeEdit."),
-        ("16:00", "16:30", "P"), ("16:30", "18:00", "B"),
+        ("16:00", "18:00", "W"), ("18:00", "19:00", "B"),
     ],
     date(2026, 11, 11): [
         ("07:00", "11:55", "T1"), ("11:55", "12:15", "P20"),
         L("12:15", "14:00", "Forelesning SOC1 - summary lecture og mock exam",
           "SOC1-plan, 11.11. Tid antatt ut fra fast SOC1-tid onsdag 12:15-14:00 - sjekk TimeEdit."),
-        ("14:00", "14:30", "P"), ("14:30", "15:30", "T2"), ("15:30", "16:00", "P"),
-        ("16:00", "18:00", "B"),
+        ("14:00", "16:00", "W"), ("16:00", "17:00", "T2"), ("17:00", "17:30", "P"),
+        ("17:30", "19:00", "B"),
     ],
     # --- helger med spesialinnhold ---
     date(2026, 10, 31): [
@@ -564,10 +576,17 @@ def soc1_prep_block(i):
 
 def prep_day(d, i):
     title, desc = soc1_prep_block(i)
-    if d.weekday() < 5:
+    if d.weekday() == 4:   # fredag, slutt 18:00 - SOC1 beholder 4 t 45 min, BUD1 utgår denne dagen
+        spec = [("07:00", "08:45", "T1"), ("08:45", "09:15", "P"),
+                X("09:15", "11:30", title, desc, "SOC1"), ("11:30", "13:30", "W"),
+                X("13:30", "16:00", title, desc, "SOC1"), ("16:00", "16:30", "P"),
+                ("16:30", "18:00", "T2")]
+        return morning_normal(d) + sal(d, spec) + evening_normal(d)
+    if d.weekday() < 4:    # man-tor, slutt 19:00
         spec = [("07:00", "09:15", "T1"), ("09:15", "09:45", "P"),
-                X("09:45", "14:30", title, desc, "SOC1"), ("14:30", "15:00", "P"),
-                ("15:00", "16:30", "T2"), ("16:30", "17:00", "P"), ("17:00", "18:00", "B")]
+                X("09:45", "11:30", title, desc, "SOC1"), ("11:30", "13:30", "W"),
+                X("13:30", "16:30", title, desc, "SOC1"), ("16:30", "17:00", "P"),
+                ("17:00", "19:00", "T2")]
         return morning_normal(d) + sal(d, spec) + evening_normal(d)
     spec = [X("10:00", "13:00", title, desc, "SOC1"), ("13:00", "13:30", "P"),
             ("13:30", "16:00", "C")]
@@ -590,44 +609,56 @@ TECH2_MOCK_DESC = ("Eksamen: 3 t digital skoleeksamen med tilgang til Python (70
                    "hvis den er publisert på Canvas, ellers øvingsarkene. " + TECH2_MATERIAL)
 
 
+# Fredager rett før TECH1- og TECH2-eksamen: ingen treningsblokk, så eksamensfaget ikke kuttes 2 t
+FINAL_FRIDAY_NO_WORKOUT = {date(2026, 11, 27), date(2026, 12, 11)}
+
+
 def final_day(d):
-    weekend = d.weekday() >= 5
-    sal_end = "17:00" if weekend else "17:30"
-    sunday = d.weekday() == 6
+    wd = d.weekday()
+    weekend = wd >= 5
+    sal_end = "17:00" if weekend else ("19:00" if wd <= 3 else "17:30")
+    workout = (not weekend) and d not in FINAL_FRIDAY_NO_WORKOUT
+    sunday = wd == 6
     out = morning_final(d)
 
     if TECH2_HOME_EXAM[0] <= d <= TECH2_HOME_EXAM[1]:
-        out += sal(d, [X("06:00", "17:30", "Grinde på SAL: TECH2 - hjemmeeksamen (gruppe)",
-                         "Alt annet er strøket disse dagene. Sjekk Canvas for nøyaktig start- og "
-                         "innleveringstid.", "TECH2")])
-        return out + evening_final(d, run=False)
+        t, x = ("Grinde på SAL: TECH2 - hjemmeeksamen (gruppe)",
+                "Alt annet er strøket disse dagene. Sjekk Canvas for nøyaktig start- og innleveringstid.")
+        spec = ([X("06:00", "11:30", t, x, "TECH2"), ("11:30", "13:30", "W"),
+                 X("13:30", sal_end, t, x, "TECH2")] if workout else [X("06:00", sal_end, t, x, "TECH2")])
+        return out + sal(d, spec) + evening_final(d)
 
     if date(2026, 11, 26) <= d <= date(2026, 11, 30):
         n = (d - date(2026, 11, 26)).days + 1
-        out += sal(d, [
-            X("06:00", "10:00", f"Grinde på SAL: TECH1 - prøveeksamen {n} (4 t, uten kalkulator)",
-              TECH1_MOCK_DESC, "TECH1"),
-            X("10:00", "12:00", f"Grinde på SAL: TECH1 - rett prøveeksamen {n} og noter hull",
-              "Rett mot løsningsforslaget. Skriv ned hvilke seksjoner du bommet på.", "TECH1"),
-            X("12:00", sal_end, "Grinde på SAL: TECH1 - tett hull (seksjonene du bommet på)",
-              "Tilbake til boka: teori, eksempler og oppgaver i seksjonene fra dagens prøveeksamen.",
-              "TECH1"),
-        ])
-        return out + evening_final(d, clean=sunday, bud_rev=BUD1_REV.get(d))
+        mock = X("06:00", "10:00", f"Grinde på SAL: TECH1 - prøveeksamen {n} (4 t, uten kalkulator)",
+                 TECH1_MOCK_DESC, "TECH1")
+        ct = (f"Grinde på SAL: TECH1 - rett prøveeksamen {n} og noter hull",
+              "Rett mot løsningsforslaget. Skriv ned hvilke seksjoner du bommet på.")
+        ft = ("Grinde på SAL: TECH1 - tett hull (seksjonene du bommet på)",
+              "Tilbake til boka: teori, eksempler og oppgaver i seksjonene fra dagens prøveeksamen.")
+        if workout:
+            spec = [mock, X("10:00", "11:30", *ct, "TECH1"), ("11:30", "13:30", "W"),
+                    X("13:30", sal_end, *ft, "TECH1")]
+        else:
+            spec = [mock, X("10:00", "12:00", *ct, "TECH1"), X("12:00", sal_end, *ft, "TECH1")]
+        return out + sal(d, spec) + evening_final(d, clean=sunday, bud_rev=BUD1_REV.get(d))
 
     if date(2026, 12, 2) <= d <= date(2026, 12, 8):
         n = (d - date(2026, 12, 2)).days + 1
-        out += sal(d, [
-            X("06:00", "09:00", f"Grinde på SAL: BUD1 - prøveeksamen {n} (3 t på tid, med Excel)",
-              BUD1_MOCK_DESC, "BUD1"),
-            X("09:00", "11:00", f"Grinde på SAL: BUD1 - rett prøveeksamen {n} og noter hull",
-              "Rett mot løsningsforslaget. Skriv ned hvilke kapitler du bommet på.", "BUD1"),
-            X("11:00", "13:00", "Grinde på SAL: BUD1 - repeter kapitlene du bommet på",
-              "Drury (9. utg.), pensum kap. 1-10, 12 og 14-16.", "BUD1"),
-            ("13:00", "13:30", "P"),
-            ("13:30", sal_end, "C"),
-        ])
-        return out + evening_final(d, clean=sunday)
+        head = [X("06:00", "09:00", f"Grinde på SAL: BUD1 - prøveeksamen {n} (3 t på tid, med Excel)",
+                  BUD1_MOCK_DESC, "BUD1"),
+                X("09:00", "11:00", f"Grinde på SAL: BUD1 - rett prøveeksamen {n} og noter hull",
+                  "Rett mot løsningsforslaget. Skriv ned hvilke kapitler du bommet på.", "BUD1")]
+        rt = ("Grinde på SAL: BUD1 - repeter kapitlene du bommet på",
+              "Drury (9. utg.), pensum kap. 1-10, 12 og 14-16. BUD1 har 7 t hver dag denne uka.")
+        if workout:   # BUD1 beholder 7 t; treningen tas fra "Gå igjennom der du henger etter"
+            spec = head + [X("11:00", "11:30", *rt, "BUD1"), ("11:30", "13:30", "W"),
+                           X("13:30", "15:00", *rt, "BUD1"), ("15:00", "15:30", "P"),
+                           ("15:30", sal_end, "C")]
+        else:
+            spec = head + [X("11:00", "13:00", *rt, "BUD1"), ("13:00", "13:30", "P"),
+                           ("13:30", sal_end, "C")]
+        return out + sal(d, spec) + evening_final(d, clean=sunday)
 
     if date(2026, 12, 10) <= d <= date(2026, 12, 15):
         themes = {
@@ -637,24 +668,27 @@ def final_day(d):
         }
         if d in themes:
             wk, topics = themes[d]
-            out += sal(d, [
-                X("06:00", "12:00", f"Grinde på SAL: TECH2 - repetisjon {wk}",
-                  f"{wk}: {topics}. " + TECH2_MATERIAL, "TECH2"),
-                X("12:00", sal_end, f"Grinde på SAL: TECH2 - øvinger {wk}",
-                  "Gjør øvingsarkene på nytt uten å se på løsningen først. " + TECH2_MATERIAL,
-                  "TECH2"),
-            ])
+            rep = (f"Grinde på SAL: TECH2 - repetisjon {wk}", f"{wk}: {topics}. " + TECH2_MATERIAL)
+            ov = (f"Grinde på SAL: TECH2 - øvinger {wk}",
+                  "Gjør øvingsarkene på nytt uten å se på løsningen først. " + TECH2_MATERIAL)
+            if workout:
+                spec = [X("06:00", "11:30", *rep, "TECH2"), ("11:30", "13:30", "W"),
+                        X("13:30", sal_end, *ov, "TECH2")]
+            else:
+                spec = [X("06:00", "12:00", *rep, "TECH2"), X("12:00", sal_end, *ov, "TECH2")]
         else:
             n = (d - date(2026, 12, 13)).days + 1
-            out += sal(d, [
-                X("06:00", "09:00", f"Grinde på SAL: TECH2 - prøveeksamen {n} (3 t på tid, med Python)",
-                  TECH2_MOCK_DESC, "TECH2"),
-                X("09:00", "11:00", f"Grinde på SAL: TECH2 - rett prøveeksamen {n} og noter hull",
-                  "Skriv ned hvilke uker/emner du bommet på.", "TECH2"),
-                X("11:00", sal_end, "Grinde på SAL: TECH2 - tett hull (emnene du bommet på)",
-                  TECH2_MATERIAL, "TECH2"),
-            ])
-        return out + evening_final(d, clean=sunday)
+            head = [X("06:00", "09:00", f"Grinde på SAL: TECH2 - prøveeksamen {n} (3 t på tid, med Python)",
+                      TECH2_MOCK_DESC, "TECH2"),
+                    X("09:00", "11:00", f"Grinde på SAL: TECH2 - rett prøveeksamen {n} og noter hull",
+                      "Skriv ned hvilke uker/emner du bommet på.", "TECH2")]
+            fh = ("Grinde på SAL: TECH2 - tett hull (emnene du bommet på)", TECH2_MATERIAL)
+            if workout:
+                spec = head + [X("11:00", "11:30", *fh, "TECH2"), ("11:30", "13:30", "W"),
+                               X("13:30", sal_end, *fh, "TECH2")]
+            else:
+                spec = head + [X("11:00", sal_end, *fh, "TECH2")]
+        return out + sal(d, spec) + evening_final(d, clean=sunday)
 
     raise ValueError(f"Ingen plan for {d}")
 
@@ -675,7 +709,7 @@ def exam_day(d):
             out.append(Ev(d, SOC1_EXAM_TIME[0], SOC1_EXAM_TIME[1], title, desc, kind="EXAM"))
         else:
             out.append(Ev(d, None, None, title, desc, kind="EXAM"))
-        out += [e for e in evening_normal(d, run=False)]
+        out += evening_normal(d)
         return out
     if d == TECH1_EXAM:
         out.append(Ev(d, None, None, "EKSAMEN TECH1 - 4 t skoleeksamen (tid ikke lagt inn)",
@@ -689,8 +723,7 @@ def exam_day(d):
         out.append(Ev(d, None, None, "EKSAMEN TECH2 - 3 t digital med Python (tid ikke lagt inn)",
                       "70 % av karakteren. Legg inn klokkeslett når du vet det.", kind="EXAM"))
         return out
-    out += [Ev(d, "19:00", "19:40", "Middag", "Lag middag og spis.", kind="ROUTINE"),
-            Ev(d, "20:00", "20:15", "Leggetid", "I seng kl. 20:00.", kind="ROUTINE")]
+    out.append(Ev(d, "20:00", "20:15", "Leggetid", "I seng kl. 20:00.", kind="ROUTINE"))
     return out
 
 
@@ -753,9 +786,10 @@ def compact_sections(ids: list[str]) -> str:
     return ", ".join(r[0] if len(r) == 1 else f"{r[0]}-{r[-1]}" for r in parts)
 
 
-def allocate_tech1(blocks: list[Ev]):
+def allocate_tech1(blocks: list[Ev], a0: float = 0.0, a1: float | None = None):
     items = TECH1_SECTIONS
     W = sum(w for *_, w in items)
+    a1 = W if a1 is None else a1
     T = sum(dur(b) for b in blocks)
     starts, acc = [], 0.0
     for *_, w in items:
@@ -763,9 +797,9 @@ def allocate_tech1(blocks: list[Ev]):
         acc += w
     t = 0
     for b in blocks:
-        a = W * t / T
+        a = a0 + (a1 - a0) * t / T
         t += dur(b)
-        z = W * t / T
+        z = a0 + (a1 - a0) * t / T
         chosen = []
         for (sid, title, w), s0 in zip(items, starts):
             s1 = s0 + w
@@ -800,16 +834,17 @@ def bud1_points():
     return pts, segs, acc
 
 
-def allocate_bud1(blocks: list[Ev]):
+def allocate_bud1(blocks: list[Ev], a0: float = 0, a1: float | None = None):
     pts, segs, total = bud1_points()
-    offsets = [p[0] for p in pts]
+    a1 = total if a1 is None else a1
+    offsets = [p[0] for p in pts if a0 < p[0] <= a1]
     T = sum(dur(b) for b in blocks)
-    t, prev = 0, 0
+    t, prev = 0, a0
     for i, b in enumerate(blocks):
         t += dur(b)
-        target = total * t / T
+        target = a0 + (a1 - a0) * t / T
         cand = [o for o in offsets if o > prev]
-        cut = min(cand, key=lambda o: abs(o - target)) if i < len(blocks) - 1 else total
+        cut = min(cand, key=lambda o: abs(o - target)) if i < len(blocks) - 1 else a1
         a, z = prev, cut
         prev = cut
         ranges, lines = [], []
@@ -831,14 +866,14 @@ def allocate_bud1(blocks: list[Ev]):
                   "gjennomgått innen 22.11.")
 
 
-def allocate_tech2(blocks: list[Ev]):
-    n = len(TECH2_TOPICS)
+def allocate_tech2(blocks: list[Ev], a0: float = 0.0, a1: float | None = None):
+    a1 = len(TECH2_TOPICS) if a1 is None else a1
     T = sum(dur(b) for b in blocks)
     t = 0
     for b in blocks:
-        a = n * t / T
+        a = a0 + (a1 - a0) * t / T
         t += dur(b)
-        z = n * t / T
+        z = a0 + (a1 - a0) * t / T
         chosen = []
         for i, (wk, topic) in enumerate(TECH2_TOPICS):
             overlap = min(z, i + 1) - max(a, i)
@@ -940,6 +975,9 @@ def to_ics(events: list[Ev]) -> str:
         if e.desc:
             lines.append(f"DESCRIPTION:{esc(e.desc)}")
         lines.append(f"CATEGORIES:{esc(e.kind)}")
+        if e.alarm:
+            lines += ["BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{esc(e.title)}",
+                      "TRIGGER:PT0S", "END:VALARM"]
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     folded = []
@@ -960,12 +998,19 @@ def build() -> list[Ev]:
     def q(name):
         return sorted([e for e in events if e.queue == name], key=lambda e: (e.d, mins(e.start)))
 
-    t1 = [e for e in q("TECH1") if e.d >= TECH1_CHAPTERS_FROM]
-    if len([e for e in q("TECH1") if e.d < TECH1_CHAPTERS_FROM]):
+    if any(e.d < TECH1_CHAPTERS_FROM for e in q("TECH1")):
         raise ValueError("TECH1-kapittelblokk før kapittelstart")
-    allocate_tech1(t1)
-    allocate_bud1(q("BUD1"))
-    allocate_tech2(q("TECH2"))
+    totals = {"TECH1": sum(w for *_, w in TECH1_SECTIONS), "BUD1": bud1_points()[2],
+              "TECH2": float(len(TECH2_TOPICS))}
+    allocs = {"TECH1": allocate_tech1, "BUD1": allocate_bud1, "TECH2": allocate_tech2}
+    for name in ("TECH1", "BUD1", "TECH2"):
+        past = [b for b in q(name) if b.d < FREEZE_DATE]
+        future = [b for b in q(name) if b.d >= FREEZE_DATE]
+        if past:
+            if not LOCKED[name]:
+                raise ValueError(f"{name}: blokker før FREEZE_DATE, men LOCKED[{name!r}] er 0")
+            allocs[name](past, 0, LOCKED[name])
+        allocs[name](future, LOCKED[name], totals[name])
     events.sort(key=lambda e: (e.d, e.start is not None, mins(e.start) if e.start else 0))
     return events
 
