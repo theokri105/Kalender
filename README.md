@@ -53,7 +53,7 @@ course 1 h + 3 h "Gå igjennom der du henger etter" · Sunday cleaning 16:30–1
 from 2.11 2.5 h/day rising to 4 h/day until 18.11, review 19–22.11, home exam 23–25.11 (nothing else),
 then no TECH2 until after the BUD1 exam; full focus 10–15.12. Exam 16.12. Lectures (Wed) and workshops (Fri) are blocked.
 
-**BUD1:** Drury ch. 1–10, 12, 14–16 evenly by pages 27.10–20.11 (must be done by 23.11); 26–30.11 only 30 min revision
+**BUD1:** no BUD1 27–28.10 (no time); Drury ch. 1–10, 12, 14–16 evenly by pages 29.10–20.11 (must be done by 23.11); 26–30.11 only 30 min revision
 19:30–20:00; 2–8.12 7 h/day mock exams (rest of the day = catch-up); exam 9.12 09:00–12:00.
 
 **SOC1:** reflection note 2 on Sat 31.10; oral exam date is a placeholder (16.11); the 3 days before the exam:

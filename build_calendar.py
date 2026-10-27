@@ -38,7 +38,7 @@ FINAL_START = date(2026, 11, 23)
 # Ved hver ny endring: sett FREEZE_DATE til første dag som skal planlegges på nytt, og LOCKED til
 # hvor langt hvert fag var planlagt før den dagen (BUD1 i sider, TECH1 i seksjonsvekt, TECH2 i ukeemner).
 FREEZE_DATE = date(2026, 10, 28)
-LOCKED = {"BUD1": 25, "TECH1": 0.0, "TECH2": 0.0}   # 27.10: BUD1 kap. 1 (s. 4-28)      # sal 06:00-17:30 (helg 17:00), ingen gym
+LOCKED = {"BUD1": 0, "TECH1": 0.0, "TECH2": 0.0}    # BUD1 flyttet: kap. 1 starter 29.10      # sal 06:00-17:30 (helg 17:00), ingen gym
 TECH1_CHAPTERS_FROM = date(2026, 10, 29)
 TECH2_REVIEW_FROM = date(2026, 11, 19)
 
@@ -444,7 +444,8 @@ SPECIAL = {
           TECH1_NOCH + " Gå gjennom notatene fra forelesningen og start på problemsettet til "
           "TA-økten onsdag 16:15. (TECH2-økten i dag er byttet til TECH1.)", "TECH1"),
         ("15:30", "16:00", "P"),
-        ("16:00", "18:00", "B"),
+        X("16:00", "18:00", "Grinde på SAL: BUD1 (flyttet - kap. 1 starter torsdag 29.10)",
+          "Ikke tid til BUD1 27. og 28.10. Hele BUD1-løpet starter fra kap. 1 torsdag 29.10.", "BUD1"),
     ],
     # Uke 44: all TECH2-egenjobbing byttet til TECH1 (forelesning og workshop beholdes)
     date(2026, 10, 29): [
@@ -460,7 +461,7 @@ SPECIAL = {
         ("10:00", "12:00", "W"),
         ("12:00", "12:15", "P15"),
         L("12:15", "14:00", "Forelesning COM1 (gruppe 1) - uke 44", COM1_W44),
-        ("14:00", "14:30", "P"), ("14:30", "15:55", "B"), ("15:55", "16:15", "P20"),
+        ("14:00", "14:30", "P"), ("14:30", "15:55", "C"), ("15:55", "16:15", "P20"),
         L("16:15", "18:00", "TA-økt TECH1 (siste)",
           "Du har allerede kursgodkjenning (4 av 6), men tar denne siste."),
         X("18:00", "19:00", "Grinde på SAL: TECH1 - gå gjennom TA-økten",
@@ -960,7 +961,8 @@ def to_ics(events: list[Ev]) -> str:
     seen: dict = {}
     for e in events:
         lines.append("BEGIN:VEVENT")
-        lines.append(f"UID:{uid_for(e, seen)}")
+        uid = uid_for(e, seen)
+        lines.append(f"UID:{uid}")
         lines.append(f"DTSTAMP:{stamp}")
         if e.start is None:
             lines.append(f"DTSTART;VALUE=DATE:{e.d:%Y%m%d}")
@@ -976,8 +978,9 @@ def to_ics(events: list[Ev]) -> str:
             lines.append(f"DESCRIPTION:{esc(e.desc)}")
         lines.append(f"CATEGORIES:{esc(e.kind)}")
         if e.alarm:
-            lines += ["BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{esc(e.title)}",
-                      "TRIGGER:PT0S", "END:VALARM"]
+            auid = uid.split("@")[0] + "-alarm"
+            lines += ["BEGIN:VALARM", f"UID:{auid}", f"X-WR-ALARMUID:{auid}", "ACTION:DISPLAY",
+                      f"DESCRIPTION:{esc(e.title)}", "TRIGGER:PT0S", "END:VALARM"]
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     folded = []
