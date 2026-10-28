@@ -13,6 +13,7 @@ når ny informasjon kommer (f.eks. eksakt dato for SOC1-eksamen).
 from __future__ import annotations
 
 import hashlib
+import os
 import re
 import sys
 from dataclasses import dataclass
@@ -297,6 +298,7 @@ class Ev:
     queue: str | None = None   # TECH1 / TECH2 / BUD1 -> innhold fylles inn automatisk
     days: int = 1              # varighet for heldagshendelser
     alarm: bool = False        # varsel ved start (VALARM)
+    detail: str = ""           # kort innholdsliste til kursfilene (kurs/*.md)
 
 
 def mins(hm: str) -> int:
@@ -813,6 +815,7 @@ def allocate_tech1(blocks: list[Ev], a0: float = 0.0, a1: float | None = None):
         else:
             label = compact_sections(ids)
         b.title = f"Grinde på SAL: TECH1 - {label}"
+        b.detail = "; ".join(f"{sid} {title}" + (" (forts.)" if cont else "") for sid, title, cont in chosen)
         lines = [f"{sid} {title}" + (" - fortsett der du slapp" if cont else "")
                  for sid, title, cont in chosen]
         b.desc = ("Sydsæter, Essential Mathematics for Economic Analysis:\n" + "\n".join(lines) +
@@ -862,6 +865,7 @@ def allocate_bud1(blocks: list[Ev], a0: float = 0, a1: float | None = None):
                 if pa <= p <= pb:
                     lines.append(f"  s. {p} {name}")
         b.title = "Grinde på SAL: BUD1 - " + " + ".join(ranges)
+        b.detail = "; ".join(ln.strip() for ln in lines if not ln.startswith("Kap.") and "kapittelstart" not in ln)
         b.desc = ("Drury, Management Accounting for Business (9. utg.)\n" + "\n".join(lines) +
                   "\n\nPensum: kap. 1-10, 12 og 14-16 (BUD1-plan). Alle kapitler skal være "
                   "gjennomgått innen 22.11.")
@@ -1018,9 +1022,52 @@ def build() -> list[Ev]:
     return events
 
 
+# ---------------------------------------------------------------------------
+# KURSFILER (kurs/*.md) - én kort plan per fag, til Claude-prosjektene per fag
+# ---------------------------------------------------------------------------
+WEEKDAYS_NO = ["man", "tir", "ons", "tor", "fre", "lør", "søn"]
+COURSE_INFO = {
+    "TECH1": "Matematikk – Sydsæter, Essential Mathematics for Economic Analysis. Eksamen 1.12: 4 t "
+             "skoleeksamen, penn og papir, uten kalkulator.",
+    "TECH2": "Programmering – Python, NumPy, pandas, plotting. Hjemmeeksamen 23.–25.11 (30 %, grupper på 2–3). "
+             "Eksamen 16.12: 3 t digital skoleeksamen med Python (70 %).",
+    "BUD1": "Drury, Management Accounting for Business (9. utg.), pensum kap. 1–10, 12 og 14–16. "
+            "Eksamen 9.12 kl. 09:00–12:00: 3 t digital skoleeksamen med Excel.",
+    "SOC1": "Muntlig eksamen, 30 min, bestått/ikke bestått, i uka 16.–20.11 (dato ikke bekreftet – plassholder 16.11).",
+    "COM1": "Porteføljeeksamen: EA1 presentasjon, EA2 forhandling, EA3 refleksjonstekst. Frist 27.11 kl. 12:00 i WISEflow.",
+}
+
+
+def write_course_files(events: list[Ev], outdir: str = "kurs") -> None:
+    os.makedirs(outdir, exist_ok=True)
+    for code, info in COURSE_INFO.items():
+        evs = sorted((e for e in events if code in e.title and e.kind != "PAUSE"),
+                     key=lambda e: (e.d, e.start is not None, mins(e.start) if e.start else 0))
+        out = [f"# {code} – studieplan", "", info, "",
+               f"Generert fra Grindeplan H26 {date.today():%d.%m.%Y} – samme innhold som kalenderen. "
+               "Ikke rediger her; endringer gjøres i build_calendar.py.", ""]
+        week = None
+        for e in evs:
+            wk = e.d.isocalendar()[1]
+            if wk != week:
+                out += ["", f"## Uke {wk}"]
+                week = wk
+            when = f"{WEEKDAYS_NO[e.d.weekday()]} {e.d.day}.{e.d.month}"
+            when += f" {e.start}–{e.end}" if e.start else " (hele dagen)"
+            line = f"- **{when}** – {typo(e.title).replace('Grinde på SAL: ', '')}"
+            if e.detail:
+                line += f"  \n  {typo(e.detail)}"
+            elif e.desc and e.kind in ("LECT", "EXAM", "MARK", "COM1", "SOC1", "BUD1REV"):
+                line += f"  \n  {typo(e.desc).replace(chr(10), ' ')}"
+            out.append(line)
+        with open(os.path.join(outdir, f"{code}.md"), "w", encoding="utf-8") as f:
+            f.write("\n".join(out) + "\n")
+
+
 if __name__ == "__main__":
     evs = build()
     out = sys.argv[1] if len(sys.argv) > 1 else "plan.ics"
     with open(out, "w", encoding="utf-8", newline="") as f:
         f.write(to_ics(evs))
-    print(f"Skrev {len(evs)} hendelser til {out}")
+    write_course_files(evs)
+    print(f"Skrev {len(evs)} hendelser til {out} + kursfiler i kurs/")

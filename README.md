@@ -15,6 +15,13 @@ Feed URL: `https://raw.githubusercontent.com/theokri105/Kalender/main/plan.ics`
 The wake-up events carry an alert. Apple Calendar removes alerts from subscribed calendars unless the **Remove → Alerts**
 box is unticked (Mac: select the calendar → Edit → Get Info). Source: Calendar User Guide for Mac, "Subscribe to calendars".
 
+## Course files for Claude Projects
+
+`kurs/TECH1.md`, `kurs/TECH2.md`, `kurs/BUD1.md`, `kurs/SOC1.md`, `kurs/COM1.md` – one short plan per course
+(date, time, sections/pages, lectures, deadlines, exam), regenerated with the calendar on every build.
+Add each file to that course's Claude Project (project knowledge → + → GitHub → select the file) and click
+**Sync now** in the project after the plan changes.
+
 ## Update the plan
 
 1. Edit the `KEY DATES` block (or `SPECIAL` days) in `build_calendar.py`.
