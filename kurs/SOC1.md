@@ -2,18 +2,14 @@
 
 Muntlig eksamen, 30 min, bestått/ikke bestått, i uka 16.–20.11 (dato ikke bekreftet – plassholder 16.11).
 
-Generert fra Grindeplan H26 28.10.2026 – samme innhold som kalenderen. Ikke rediger her; endringer gjøres i build_calendar.py.
+Generert fra Grindeplan H26 31.10.2026 – samme innhold som kalenderen. Ikke rediger her; endringer gjøres i build_calendar.py.
 
 
 ## Uke 44
-- **fre 30.10 (hele dagen)** – FRIST SOC1: Final term paper (gruppe) kl. 23:59  
-  Leveres på Canvas (SOC1-plan).
-- **lør 31.10 10:00–12:30** – SOC1 – Reflection note 2 (individuell)  
+- **fre 30.10 (hele dagen)** – SOC1: Final term paper (gruppe) – levert  
+  Levert på Canvas (SOC1-plan). Reflection note 2 er også levert.
+- **lør 31.10 10:00–12:30** – SOC1 – Reflection note 2 (levert)  
   Frist onsdag 4.11 kl. 23:59 på Canvas (SOC1-plan). Sjekk SOC1-reglene for KI-bruk på Canvas.
-
-## Uke 45
-- **ons 4.11 (hele dagen)** – FRIST SOC1: Reflection note 2 kl. 23:59  
-  Individuell, leveres på Canvas (SOC1-plan). Skrives lørdag 31.10.
 
 ## Uke 46
 - **man 9.11 14:15–16:00** – SOC1 – posterpresentasjon (obligatorisk)  

@@ -33,13 +33,14 @@ TECH1_EXAM = date(2026, 12, 1)
 BUD1_EXAM = date(2026, 12, 9)         # 09:00-12:00 (BUD1-plan)
 TECH2_EXAM = date(2026, 12, 16)
 
-FINAL_START = date(2026, 11, 23)
+FINAL_START = date(2026, 11, 23)      # sal 06:00-17:30 (helg 17:00), ingen gym
 
 # Innhold i blokker som allerede er passert låses, så de ikke får nytt innhold når planen endres.
 # Ved hver ny endring: sett FREEZE_DATE til første dag som skal planlegges på nytt, og LOCKED til
 # hvor langt hvert fag var planlagt før den dagen (BUD1 i sider, TECH1 i seksjonsvekt, TECH2 i ukeemner).
-FREEZE_DATE = date(2026, 10, 28)
-LOCKED = {"BUD1": 0, "TECH1": 0.0, "TECH2": 0.0}    # BUD1 flyttet: kap. 1 starter 29.10      # sal 06:00-17:30 (helg 17:00), ingen gym
+FREEZE_DATE = date(2026, 11, 1)
+LOCKED = {"BUD1": 0, "TECH1": 0.0, "TECH2": 0.0}    # 31.10: TECH1 og BUD1 starter på nytt fra begynnelsen 1.11
+BEDTIME_READING = ("20:00", "21:00")   # kveldslesing BUD1 kvelden før hver BUD1-økt på sal
 TECH1_CHAPTERS_FROM = date(2026, 10, 29)
 TECH2_REVIEW_FROM = date(2026, 11, 19)
 
@@ -279,6 +280,15 @@ TECH2_TOPICS = [
     (44, "Concatenating and merging"),
     (45, "AI week"),
 ]
+# Fram til BUD1-eksamen: bare NumPy, pandas og matplotlib (Stig 31.10). Grunnleggende Python
+# (uke 34-39), git/VS Code og AI week (uke 45) venter til etter BUD1-eksamen (10.-12.12).
+TECH2_FOCUS = [
+    (40, "NumPy"),
+    (41, "Intro to pandas"),
+    (42, "Plotting (matplotlib)"),
+    (43, "Grouping and aggregation (pandas)"),
+    (44, "Concatenating and merging (pandas)"),
+]
 TECH2_MATERIAL = ("Materiale (Jupyter-notebooks, skript, øvingsark, slides): "
                   "github.com/isabelhovdahl/TECH2 (uke 34-39) og "
                   "github.com/richardfoltyn/TECH2-H26 (uke 40-45). "
@@ -322,7 +332,8 @@ WORKOUT_DESC = ("Treningspause (styrke), 2 t. Normalt rundt 11:30-13:30; flyttes
                 "pausen ved fagbytte.")
 TECH2_REVIEW = ("Grinde på SAL: TECH2 - repetisjon og øving før hjemmeeksamen",
                 "Hjemmeeksamen 23.-25.11 (3 dager, grupper på 2-3, 30 %). "
-                "Gå gjennom uke 34-45 og gjør øvingsarkene på nytt der du er usikker. "
+                "Gå gjennom NumPy, pandas og matplotlib (uke 40-44) og gjør øvingsarkene på nytt der du er usikker. "
+                "Grunnleggende Python (uke 34-39) tar du etter BUD1-eksamen - trenger hjemmeeksamen det, bruk disse dagene. "
                 "Info om hjemmeeksamen kommer på Canvas. " + TECH2_MATERIAL)
 
 
@@ -362,7 +373,7 @@ def L(s, e, title, desc):
 
 # --- rutiner ---------------------------------------------------------------
 def morning_normal(d):
-    return [Ev(d, "05:15", "05:35", "Våkne for faen - Grindetid", kind="ROUTINE", alarm=True),
+    return [Ev(d, "05:15", "05:35", "Våkne for faen - Grindetid", kind="ROUTINE"),
             Ev(d, "05:35", "06:15", "Løpetur", kind="RUN"),
             Ev(d, "06:15", "07:00", "Dusj og til NHH", kind="ROUTINE")]
 
@@ -381,7 +392,7 @@ def gym(d):
 
 
 def morning_final(d):
-    return [Ev(d, "05:00", "05:20", "Våkne for faen - Grindetid", kind="ROUTINE", alarm=True),
+    return [Ev(d, "05:00", "05:20", "Våkne for faen - Grindetid", kind="ROUTINE"),
             Ev(d, "05:20", "06:00", "Til NHH", kind="ROUTINE")]
 
 
@@ -431,6 +442,14 @@ COM1_W44 = ("Uke 44: Academic and professional writing; Information literacy; "
 COM1_W45 = ("Uke 45: Pitch workshop. Possible guest lecture. Language technology and "
             "academic writing. (COM1 course outline)")
 TECH1_NOCH = "Ikke kapittelarbeid - det starter torsdag 29.10."
+MOVED_T1 = "Du jobbet med kap. 12 og 13 denne uka i stedet. TECH1-løpet starter på nytt fra 6.5 søndag 1.11."
+MOVED_B1 = "Ikke tid til BUD1 denne uka. BUD1-løpet starter på nytt fra kap. 1 søndag 1.11."
+EA3_DESC = ("650-850 ord. Flyttet fra 30.10 fordi informasjonen manglet. Struktur fra EA3-oppgaven: "
+            "1) Introduction 2) Personal learning development: own performance, feedback on your work "
+            "(inkl. feedbacken på CA1 technical report), activities in class and group work - bruk Gibbs' "
+            "cycle 3) Bruk av generativ KI i kursarbeidet (hvis du har brukt det) 4) Generativ KI i utdanning "
+            "og samfunn 5) Conclusion.\nNB: Generativ KI er ikke tillatt i utarbeidelsen av teksten. "
+            "Leveres samlet i porteføljen 21.11 (frist 27.11 kl. 12:00).")
 
 SPECIAL = {
     date(2026, 10, 27): [
@@ -446,13 +465,15 @@ SPECIAL = {
           TECH1_NOCH + " Gå gjennom notatene fra forelesningen og start på problemsettet til "
           "TA-økten onsdag 16:15. (TECH2-økten i dag er byttet til TECH1.)", "TECH1"),
         ("15:30", "16:00", "P"),
-        X("16:00", "18:00", "Grinde på SAL: BUD1 (flyttet - kap. 1 starter torsdag 29.10)",
-          "Ikke tid til BUD1 27. og 28.10. Hele BUD1-løpet starter fra kap. 1 torsdag 29.10.", "BUD1"),
+        X("16:00", "18:00", "Grinde på SAL: BUD1 (flyttet - kap. 1 starter søndag 1.11)", MOVED_B1, "BUD1"),
     ],
     # Uke 44: all TECH2-egenjobbing byttet til TECH1 (forelesning og workshop beholdes)
     date(2026, 10, 29): [
-        ("07:00", "11:30", "T1"), ("11:30", "13:30", "W"), ("13:30", "17:00", "T1"),
-        ("17:00", "17:30", "P"), ("17:30", "19:00", "B"),
+        X("07:00", "11:30", "Grinde på SAL: TECH1 (flyttet - 6.5 starter søndag 1.11)", MOVED_T1, "TECH1"),
+        ("11:30", "13:30", "W"),
+        X("13:30", "17:00", "Grinde på SAL: TECH1 (flyttet - 6.5 starter søndag 1.11)", MOVED_T1, "TECH1"),
+        ("17:00", "17:30", "P"),
+        X("17:30", "19:00", "Grinde på SAL: BUD1 (flyttet - kap. 1 starter søndag 1.11)", MOVED_B1, "BUD1"),
     ],
     date(2026, 10, 28): [
         X("07:00", "07:55", "Grinde på SAL: TECH1 - forbered TA-økten (problemsett)",
@@ -470,13 +491,8 @@ SPECIAL = {
           TECH1_NOCH + " Gå gjennom oppgavene fra TA-økten mens de er ferske.", "TECH1"),
     ],
     date(2026, 10, 30): [
-        X("07:00", "09:55", "Grinde på SAL: COM1 - EA3 refleksjonstekst: første utkast",
-          "650-850 ord. Struktur fra EA3-oppgaven: 1) Introduction 2) Personal learning "
-          "development: own performance, feedback on your work, activities in class and "
-          "group work - bruk Gibbs' cycle 3) Bruk av generativ KI i kursarbeidet (hvis du har "
-          "brukt det) 4) Generativ KI i utdanning og samfunn 5) Conclusion.\n"
-          "NB: Generativ KI er ikke tillatt i utarbeidelsen av teksten.\n"
-          "Feedback på CA1 kommer innen 1.11 - revisjon er lagt til lørdag 7.11.", "COM1"),
+        X("07:00", "09:55", "Grinde på SAL: COM1 - EA3 (flyttet til lørdag 7.11)",
+          "Informasjonen som trengs for å fullføre teksten var ikke klar - flyttet til lørdag 7.11.", "COM1"),
         ("09:55", "10:15", "P20"),
         L("10:15", "12:00", "TECH1 - reservetime (sjekk Canvas)",
           "TECH1 course outline: reservetime fredag 30.10. Tid antatt 10:15-12:00 som de "
@@ -484,7 +500,8 @@ SPECIAL = {
         ("12:00", "12:15", "P15"),
         L("12:15", "14:00", "Workshop TECH2 - uke 44",
           "Fredager 12:15-14:00 (TECH2 course outline)."),
-        ("14:00", "16:00", "W"), ("16:00", "18:00", "B"),
+        ("14:00", "16:00", "W"),
+        X("16:00", "18:00", "Grinde på SAL: BUD1 (flyttet - kap. 1 starter søndag 1.11)", MOVED_B1, "BUD1"),
     ],
     date(2026, 11, 2): [
         ("07:00", "09:55", "T1"), ("09:55", "10:15", "P20"),
@@ -528,18 +545,18 @@ SPECIAL = {
     ],
     # --- helger med spesialinnhold ---
     date(2026, 10, 31): [
-        X("10:00", "12:30", "Grinde på SAL: SOC1 - Reflection note 2 (individuell)",
+        X("10:00", "12:30", "Grinde på SAL: SOC1 - Reflection note 2 (levert)",
           "Frist onsdag 4.11 kl. 23:59 på Canvas (SOC1-plan). Sjekk SOC1-reglene for "
           "KI-bruk på Canvas.", "SOC1"),
         ("12:30", "13:00", "P"), ("13:00", "16:00", "C"),
     ],
+    # Søndag 1.11: oppstartsdag - TECH1 fra 6.5 og BUD1 fra kap. 1
+    date(2026, 11, 1): [
+        ("10:00", "14:00", "T1"), ("14:00", "14:30", "P"), ("14:30", "16:00", "B"),
+    ],
     date(2026, 11, 7): [
-        ("10:00", "11:00", "T1"), ("11:00", "11:30", "P"),
-        X("11:30", "12:30", "Grinde på SAL: COM1 - EA3: revider refleksjonsteksten etter CA1-feedback",
-          "Feedback på CA1 (technical report) skulle komme innen 1.11. EA3 skal dekke hvordan "
-          "du reagerte på feedbacken og hvordan du brukte den. NB: Generativ KI er ikke tillatt "
-          "i utarbeidelsen av teksten.", "COM1"),
-        ("12:30", "13:00", "P"), ("13:00", "16:00", "C"),
+        X("10:00", "14:00", "Grinde på SAL: COM1 - EA3 refleksjonstekst (hele teksten)", EA3_DESC, "COM1"),
+        ("14:00", "14:30", "P"), ("14:30", "16:00", "C"),
     ],
     date(2026, 11, 21): [
         X("10:00", "14:00", "Grinde på SAL: COM1 - EA1 individuell presentasjon: endelig versjon",
@@ -664,14 +681,17 @@ def final_day(d):
         return out + sal(d, spec) + evening_final(d, clean=sunday)
 
     if date(2026, 12, 10) <= d <= date(2026, 12, 15):
-        themes = {
-            date(2026, 12, 10): ("uke 34-39", "Python basics, git, decisions, loops, functions, packages"),
-            date(2026, 12, 11): ("uke 40-42", "git/VS Code & NumPy, intro to pandas, plotting"),
-            date(2026, 12, 12): ("uke 43-45", "grouping and aggregation, concatenating and merging, AI week"),
+        themes = {   # grunnleggende Python læres først nå (Stig 31.10)
+            date(2026, 12, 10): ("lær uke 34-36", "uke 34-36",
+                                 "Course intro & Getting started with VS Code; Python basics & Version control with git; Decisions"),
+            date(2026, 12, 11): ("lær uke 37-39 + git/VS Code", "uke 37-39",
+                                 "Loops; Functions; Python packages & Virtual environments; More on git and VS Code (uke 40)"),
+            date(2026, 12, 12): ("uke 45 AI week + repetisjon NumPy/pandas/plotting", "uke 40-45",
+                                 "AI week (uke 45); repetisjon av NumPy, pandas, plotting, grouping/aggregation, concatenating/merging (uke 40-44)"),
         }
         if d in themes:
-            wk, topics = themes[d]
-            rep = (f"Grinde på SAL: TECH2 - repetisjon {wk}", f"{wk}: {topics}. " + TECH2_MATERIAL)
+            first, wk, topics = themes[d]
+            rep = (f"Grinde på SAL: TECH2 - {first}", f"{topics}. " + TECH2_MATERIAL)
             ov = (f"Grinde på SAL: TECH2 - øvinger {wk}",
                   "Gjør øvingsarkene på nytt uten å se på løsningen først. " + TECH2_MATERIAL)
             if workout:
@@ -751,10 +771,8 @@ def build_day(d: date) -> list[Ev]:
 def markers() -> list[Ev]:
     h1, h2 = TECH2_HOME_EXAM
     return [
-        Ev(date(2026, 10, 30), None, None, "FRIST SOC1: Final term paper (gruppe) kl. 23:59",
-           "Leveres på Canvas (SOC1-plan).", kind="MARK"),
-        Ev(date(2026, 11, 4), None, None, "FRIST SOC1: Reflection note 2 kl. 23:59",
-           "Individuell, leveres på Canvas (SOC1-plan). Skrives lørdag 31.10.", kind="MARK"),
+        Ev(date(2026, 10, 30), None, None, "SOC1: Final term paper (gruppe) - levert",
+           "Levert på Canvas (SOC1-plan). Reflection note 2 er også levert.", kind="MARK"),
         Ev(date(2026, 11, 12), None, None, "FRIST SOC1: Preparatory exam sheet kl. 23:59",
            "Bruk dokumentet på Canvas (SOC1-plan).", kind="MARK"),
         Ev(h1, None, None, "TECH2 hjemmeeksamen (30 %, gruppe)",
@@ -866,13 +884,15 @@ def allocate_bud1(blocks: list[Ev], a0: float = 0, a1: float | None = None):
                     lines.append(f"  s. {p} {name}")
         b.title = "Grinde på SAL: BUD1 - " + " + ".join(ranges)
         b.detail = "; ".join(ln.strip() for ln in lines if not ln.startswith("Kap.") and "kapittelstart" not in ln)
-        b.desc = ("Drury, Management Accounting for Business (9. utg.)\n" + "\n".join(lines) +
+        b.desc = ("Sidene leste du på kveldslesingen i går. Bruk økta på det viktigste: nøkkelbegreper, "
+                  "eksemplene og oppgavene (Assessment material).\n\nDrury, Management Accounting for "
+                  "Business (9. utg.)\n" + "\n".join(lines) +
                   "\n\nPensum: kap. 1-10, 12 og 14-16 (BUD1-plan). Alle kapitler skal være "
                   "gjennomgått innen 22.11.")
 
 
 def allocate_tech2(blocks: list[Ev], a0: float = 0.0, a1: float | None = None):
-    a1 = len(TECH2_TOPICS) if a1 is None else a1
+    a1 = len(TECH2_FOCUS) if a1 is None else a1
     T = sum(dur(b) for b in blocks)
     t = 0
     for b in blocks:
@@ -880,7 +900,7 @@ def allocate_tech2(blocks: list[Ev], a0: float = 0.0, a1: float | None = None):
         t += dur(b)
         z = a0 + (a1 - a0) * t / T
         chosen = []
-        for i, (wk, topic) in enumerate(TECH2_TOPICS):
+        for i, (wk, topic) in enumerate(TECH2_FOCUS):
             overlap = min(z, i + 1) - max(a, i)
             if overlap > 0.08 or (overlap > 0 and overlap >= 0.5 * (z - a)):
                 chosen.append((wk, topic, i < a - 0.08))
@@ -888,7 +908,8 @@ def allocate_tech2(blocks: list[Ev], a0: float = 0.0, a1: float | None = None):
         b.title = "Grinde på SAL: TECH2 - " + " + ".join(parts)
         b.desc = ("\n".join(f"Uke {wk}: {topic}" + (" - fortsett der du slapp" if cont else "")
                             for wk, topic, cont in chosen) +
-                  "\n\nGå gjennom notebooken og gjør øvingsarket for uka. " + TECH2_MATERIAL)
+                  "\n\nGå gjennom notebooken og gjør øvingsarket for uka. Fram til BUD1-eksamen: bare NumPy, "
+                  "pandas og matplotlib. " + TECH2_MATERIAL)
 
 
 # ---------------------------------------------------------------------------
@@ -1008,7 +1029,7 @@ def build() -> list[Ev]:
     if any(e.d < TECH1_CHAPTERS_FROM for e in q("TECH1")):
         raise ValueError("TECH1-kapittelblokk før kapittelstart")
     totals = {"TECH1": sum(w for *_, w in TECH1_SECTIONS), "BUD1": bud1_points()[2],
-              "TECH2": float(len(TECH2_TOPICS))}
+              "TECH2": float(len(TECH2_FOCUS))}
     allocs = {"TECH1": allocate_tech1, "BUD1": allocate_bud1, "TECH2": allocate_tech2}
     for name in ("TECH1", "BUD1", "TECH2"):
         past = [b for b in q(name) if b.d < FREEZE_DATE]
@@ -1018,6 +1039,21 @@ def build() -> list[Ev]:
                 raise ValueError(f"{name}: blokker før FREEZE_DATE, men LOCKED[{name!r}] er 0")
             allocs[name](past, 0, LOCKED[name])
         allocs[name](future, LOCKED[name], totals[name])
+
+    # Kveldslesing BUD1: kvelden før hver BUD1-økt på sal leses sidene til økta (uten oppgavedelen).
+    for b in q("BUD1"):
+        prev = b.d - timedelta(days=1)
+        bed = next((e for e in events if e.d == prev and e.title == "Leggetid"), None)
+        if bed is None:
+            continue
+        pages = b.title.split(" - ", 1)[1]
+        reading = [x for x in b.detail.split("; ") if "Assessment material" not in x]
+        bed.title = f"Leggetid + kveldslesing BUD1: {pages}"
+        bed.start, bed.end = BEDTIME_READING
+        bed.kind = "BUD1READ"
+        bed.desc = ("I seng kl. 20:00, lys av 21:00. Les sidene til morgendagens BUD1-økt (hopp over Assessment "
+                    "material - oppgavene tar du på sal):\n" + "\n".join(reading))
+        bed.detail = "; ".join(reading)
     events.sort(key=lambda e: (e.d, e.start is not None, mins(e.start) if e.start else 0))
     return events
 

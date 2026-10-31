@@ -28,23 +28,16 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261027-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T051500
 DTEND;TZID=Europe/Oslo:20261027T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261027-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261027-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T053500
 DTEND;TZID=Europe/Oslo:20261027T061500
 TRANSP:OPAQUE
@@ -53,7 +46,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T061500
 DTEND;TZID=Europe/Oslo:20261027T070000
 TRANSP:OPAQUE
@@ -62,7 +55,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T070000
 DTEND;TZID=Europe/Oslo:20261027T095500
 TRANSP:OPAQUE
@@ -76,7 +69,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-0955-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T095500
 DTEND;TZID=Europe/Oslo:20261027T101500
 TRANSP:OPAQUE
@@ -86,7 +79,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-1015-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T101500
 DTEND;TZID=Europe/Oslo:20261027T120000
 TRANSP:OPAQUE
@@ -96,7 +89,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-1200-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T120000
 DTEND;TZID=Europe/Oslo:20261027T153000
 TRANSP:OPAQUE
@@ -109,7 +102,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-1530-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T153000
 DTEND;TZID=Europe/Oslo:20261027T160000
 TRANSP:OPAQUE
@@ -119,18 +112,18 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-1600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T160000
 DTEND;TZID=Europe/Oslo:20261027T180000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 (flyttet – kap. 1 starter torsdag 29.10)
-DESCRIPTION:Ikke tid til BUD1 27. og 28.10. Hele BUD1-løpet starter fra ka
- p. 1 torsdag 29.10.
+SUMMARY:Grinde på SAL: BUD1 (flyttet – kap. 1 starter søndag 1.11)
+DESCRIPTION:Ikke tid til BUD1 denne uka. BUD1-løpet starter på nytt fra k
+ ap. 1 søndag 1.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261027-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261027T200000
 DTEND;TZID=Europe/Oslo:20261027T201500
 TRANSP:OPAQUE
@@ -140,23 +133,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T051500
 DTEND;TZID=Europe/Oslo:20261028T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261028-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261028-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T053500
 DTEND;TZID=Europe/Oslo:20261028T061500
 TRANSP:OPAQUE
@@ -165,7 +151,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T061500
 DTEND;TZID=Europe/Oslo:20261028T070000
 TRANSP:OPAQUE
@@ -174,7 +160,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T070000
 DTEND;TZID=Europe/Oslo:20261028T075500
 TRANSP:OPAQUE
@@ -184,7 +170,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-0755-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T075500
 DTEND;TZID=Europe/Oslo:20261028T081500
 TRANSP:OPAQUE
@@ -194,7 +180,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-0815-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T081500
 DTEND;TZID=Europe/Oslo:20261028T100000
 TRANSP:OPAQUE
@@ -204,7 +190,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1000-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T100000
 DTEND;TZID=Europe/Oslo:20261028T120000
 TRANSP:OPAQUE
@@ -216,7 +202,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1200-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T120000
 DTEND;TZID=Europe/Oslo:20261028T121500
 TRANSP:OPAQUE
@@ -226,7 +212,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1215-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T121500
 DTEND;TZID=Europe/Oslo:20261028T140000
 TRANSP:OPAQUE
@@ -239,7 +225,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1400-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T140000
 DTEND;TZID=Europe/Oslo:20261028T143000
 TRANSP:OPAQUE
@@ -249,7 +235,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1430-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T143000
 DTEND;TZID=Europe/Oslo:20261028T155500
 TRANSP:OPAQUE
@@ -260,7 +246,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1555-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T155500
 DTEND;TZID=Europe/Oslo:20261028T161500
 TRANSP:OPAQUE
@@ -270,7 +256,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1615-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T161500
 DTEND;TZID=Europe/Oslo:20261028T180000
 TRANSP:OPAQUE
@@ -280,7 +266,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-1800-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T180000
 DTEND;TZID=Europe/Oslo:20261028T190000
 TRANSP:OPAQUE
@@ -291,7 +277,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261028-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261028T200000
 DTEND;TZID=Europe/Oslo:20261028T201500
 TRANSP:OPAQUE
@@ -301,23 +287,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T051500
 DTEND;TZID=Europe/Oslo:20261029T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261029-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261029-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T053500
 DTEND;TZID=Europe/Oslo:20261029T061500
 TRANSP:OPAQUE
@@ -326,7 +305,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T061500
 DTEND;TZID=Europe/Oslo:20261029T070000
 TRANSP:OPAQUE
@@ -335,22 +314,18 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T070000
 DTEND;TZID=Europe/Oslo:20261029T113000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 6.5\, 6.7\, 7.1\, 7.4
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n6.5 A
-  Brief Introduction to Limits\n6.7 Sums\, Products\, and Quotients\n7.1 Im
- plicit Differentiation\n7.4 Linear Approximations\n\nLes teorien\, regn ek
- semplene og gjør oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, i
- kke 12.10)\; for anvendelser trenger du bare se hvordan verktøyet settes 
- opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 (flyttet – 6.5 starter søndag 1.11)
+DESCRIPTION:Du jobbet med kap. 12 og 13 denne uka i stedet. TECH1-løpet st
+ arter på nytt fra 6.5 søndag 1.11.
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T113000
 DTEND;TZID=Europe/Oslo:20261029T133000
 TRANSP:OPAQUE
@@ -362,22 +337,18 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-1330-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T133000
 DTEND;TZID=Europe/Oslo:20261029T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 7.4 (forts.)\, 7.5–7.6
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n7.4 L
- inear Approximations – fortsett der du slapp\n7.5 Polynomial Approximati
- ons\n7.6 Taylor's Formula\n\nLes teorien\, regn eksemplene og gjør oppgav
- ene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvende
- lser trenger du bare se hvordan verktøyet settes opp. Seksjonstitler fra 
- Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 (flyttet – 6.5 starter søndag 1.11)
+DESCRIPTION:Du jobbet med kap. 12 og 13 denne uka i stedet. TECH1-løpet st
+ arter på nytt fra 6.5 søndag 1.11.
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T170000
 DTEND;TZID=Europe/Oslo:20261029T173000
 TRANSP:OPAQUE
@@ -387,29 +358,18 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T173000
 DTEND;TZID=Europe/Oslo:20261029T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 1\, s. 4–28 + kap. 2\, s. 29–34
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 1 In
- troduction to management accounting:\n  s. 4 (kapittelstart)\n  s. 5 The u
- sers of accounting information\n  s. 6 Differences between management acco
- unting and financial accounting\n  s. 7 The decision-making\, planning and
-  control process\n  s. 11 The impact of the changing business environment 
- on management accounting\n  s. 19 Focus on customer satisfaction and new m
- anagement approaches\n  s. 22 Functions of management accounting\n  s. 23 
- Summary of the contents of this book\n  s. 26 Summary\n  s. 27 Key terms a
- nd concepts\n  s. 28 Assessment material\nKap. 2 An introduction to cost t
- erms and concepts:\n  s. 29 (kapittelstart)\n  s. 30 Cost objects\n  s. 31
-  Manufacturing\, merchandising and service organizations\n  s. 31 Direct a
- nd indirect costs\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle
-  kapitler skal være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 (flyttet – kap. 1 starter søndag 1.11)
+DESCRIPTION:Ikke tid til BUD1 denne uka. BUD1-løpet starter på nytt fra k
+ ap. 1 søndag 1.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261029-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261029T200000
 DTEND;TZID=Europe/Oslo:20261029T201500
 TRANSP:OPAQUE
@@ -418,34 +378,28 @@ DESCRIPTION:I seng kl. 20:00.
 CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
-UID:20261030-heldag-MARK-c83e9107@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261030-heldag-MARK-478c611d@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 TRANSP:TRANSPARENT
-SUMMARY:FRIST SOC1: Final term paper (gruppe) kl. 23:59
-DESCRIPTION:Leveres på Canvas (SOC1-plan).
+SUMMARY:SOC1: Final term paper (gruppe) – levert
+DESCRIPTION:Levert på Canvas (SOC1-plan). Reflection note 2 er også lever
+ t.
 CATEGORIES:MARK
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T051500
 DTEND;TZID=Europe/Oslo:20261030T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261030-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261030-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T053500
 DTEND;TZID=Europe/Oslo:20261030T061500
 TRANSP:OPAQUE
@@ -454,7 +408,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T061500
 DTEND;TZID=Europe/Oslo:20261030T070000
 TRANSP:OPAQUE
@@ -463,23 +417,18 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-0700-COM1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T070000
 DTEND;TZID=Europe/Oslo:20261030T095500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: COM1 – EA3 refleksjonstekst: første utkast
-DESCRIPTION:650–850 ord. Struktur fra EA3-oppgaven: 1) Introduction 2) Pe
- rsonal learning development: own performance\, feedback on your work\, act
- ivities in class and group work – bruk Gibbs' cycle 3) Bruk av generativ
-  KI i kursarbeidet (hvis du har brukt det) 4) Generativ KI i utdanning og 
- samfunn 5) Conclusion.\nNB: Generativ KI er ikke tillatt i utarbeidelsen a
- v teksten.\nFeedback på CA1 kommer innen 1.11 – revisjon er lagt til l
- ørdag 7.11.
+SUMMARY:Grinde på SAL: COM1 – EA3 (flyttet til lørdag 7.11)
+DESCRIPTION:Informasjonen som trengs for å fullføre teksten var ikke klar
+  – flyttet til lørdag 7.11.
 CATEGORIES:COM1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-0955-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T095500
 DTEND;TZID=Europe/Oslo:20261030T101500
 TRANSP:OPAQUE
@@ -489,7 +438,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-1015-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T101500
 DTEND;TZID=Europe/Oslo:20261030T120000
 TRANSP:OPAQUE
@@ -501,7 +450,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-1200-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T120000
 DTEND;TZID=Europe/Oslo:20261030T121500
 TRANSP:OPAQUE
@@ -511,7 +460,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-1215-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T121500
 DTEND;TZID=Europe/Oslo:20261030T140000
 TRANSP:OPAQUE
@@ -521,7 +470,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-1400-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T140000
 DTEND;TZID=Europe/Oslo:20261030T160000
 TRANSP:OPAQUE
@@ -533,33 +482,18 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-1600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T160000
 DTEND;TZID=Europe/Oslo:20261030T180000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 2\, s. 35–53 + kap. 3\, s. 56–76
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 2 An
-  introduction to cost terms and concepts:\n  s. 35 Period and product cost
- s\n  s. 37 Cost behaviour\n  s. 41 Relevant and irrelevant costs and reven
- ues\n  s. 42 Avoidable and unavoidable costs\n  s. 43 Sunk costs\n  s. 44 
- Opportunity costs\n  s. 45 Incremental and marginal costs\n  s. 47 Control
- lable and uncontrollable costs\n  s. 48 The cost and management accounting
-  information system\n  s. 49 Summary\n  s. 50 Key terms and concepts\n  s.
-  51 Assessment material\nKap. 3 Cost-volume-profit analysis:\n  s. 56 (kap
- ittelstart)\n  s. 57 Curvilinear CVP relationships\n  s. 58 Linear CVP rel
- ationships\n  s. 60 A numerical approach to cost-volume-profit analysis\n 
-  s. 64 The contribution margin ratio\n  s. 65 Relevant range\n  s. 65 Marg
- in of safety\n  s. 66 Constructing the break-even or CVP chart\n  s. 67 Al
- ternative presentation of cost-volume-profit analysis\n  s. 70 Multi-produ
- ct cost-volume-profit analysis\n  s. 72 Operating leverage\n  s. 74 Cost-v
- olume-profit analysis assumptions and limitations\n  s. 76 The impact of i
- nformation technology\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). 
- Alle kapitler skal være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 (flyttet – kap. 1 starter søndag 1.11)
+DESCRIPTION:Ikke tid til BUD1 denne uka. BUD1-løpet starter på nytt fra k
+ ap. 1 søndag 1.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261030-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261030T200000
 DTEND;TZID=Europe/Oslo:20261030T201500
 TRANSP:OPAQUE
@@ -569,7 +503,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261031-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261031T080000
 DTEND;TZID=Europe/Oslo:20261031T091500
 TRANSP:OPAQUE
@@ -578,18 +512,18 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261031-1000-SOC1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261031T100000
 DTEND;TZID=Europe/Oslo:20261031T123000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: SOC1 – Reflection note 2 (individuell)
+SUMMARY:Grinde på SAL: SOC1 – Reflection note 2 (levert)
 DESCRIPTION:Frist onsdag 4.11 kl. 23:59 på Canvas (SOC1-plan). Sjekk SOC1-
  reglene for KI-bruk på Canvas.
 CATEGORIES:SOC1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261031-1230-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261031T123000
 DTEND;TZID=Europe/Oslo:20261031T130000
 TRANSP:OPAQUE
@@ -599,7 +533,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261031-1300-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261031T130000
 DTEND;TZID=Europe/Oslo:20261031T160000
 TRANSP:OPAQUE
@@ -609,18 +543,29 @@ DESCRIPTION:Fyll hull fra uka: det du ikke rakk\, det du ikke forsto\, og o
 CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
-UID:20261031-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261031-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261031T200000
-DTEND;TZID=Europe/Oslo:20261031T201500
+DTEND;TZID=Europe/Oslo:20261031T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 1\, s. 4–28 + kap. 2\, s. 29
+ –40
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 5 The users of accounting information\ns. 6 Differences between management
+  accounting and financial accounting\ns. 7 The decision-making\, planning 
+ and control process\ns. 11 The impact of the changing business environment
+  on management accounting\ns. 19 Focus on customer satisfaction and new ma
+ nagement approaches\ns. 22 Functions of management accounting\ns. 23 Summa
+ ry of the contents of this book\ns. 26 Summary\ns. 27 Key terms and concep
+ ts\ns. 30 Cost objects\ns. 31 Manufacturing\, merchandising and service or
+ ganizations\ns. 31 Direct and indirect costs\ns. 35 Period and product cos
+ ts\ns. 37 Cost behaviour
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261101-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261101T080000
 DTEND;TZID=Europe/Oslo:20261101T091500
 TRANSP:OPAQUE
@@ -629,70 +574,57 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261101-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261101T100000
-DTEND;TZID=Europe/Oslo:20261101T110000
+DTEND;TZID=Europe/Oslo:20261101T140000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 7.7
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n7.7 E
- lasticities\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum fr
- a TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger d
- u bare se hvordan verktøyet settes opp. Seksjonstitler fra Pearsons innho
- ldsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 6.5\, 6.7\, 7.1\, 7.4
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n6.5 A
+  Brief Introduction to Limits\n6.7 Sums\, Products\, and Quotients\n7.1 Im
+ plicit Differentiation\n7.4 Linear Approximations\n\nLes teorien\, regn ek
+ semplene og gjør oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, i
+ kke 12.10)\; for anvendelser trenger du bare se hvordan verktøyet settes 
+ opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261101-1100-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261101T110000
-DTEND;TZID=Europe/Oslo:20261101T113000
+UID:20261101-1400-PAUSE@grindeplan-h26
+DTSTAMP:20261031T121947Z
+DTSTART;TZID=Europe/Oslo:20261101T140000
+DTEND;TZID=Europe/Oslo:20261101T143000
 TRANSP:OPAQUE
 SUMMARY:Pause
 DESCRIPTION:30 min buffer ved fagbytte (pusterom hvis noe tar lengre tid).
 CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
-UID:20261101-1130-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261101T113000
-DTEND;TZID=Europe/Oslo:20261101T123000
+UID:20261101-1430-BUD1@grindeplan-h26
+DTSTAMP:20261031T121947Z
+DTSTART;TZID=Europe/Oslo:20261101T143000
+DTEND;TZID=Europe/Oslo:20261101T160000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 3\, s. 77–85 + kap. 4\, s. 86–95
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 3 Co
- st-volume-profit analysis:\n  s. 77 Separation of costs into their fixed a
- nd variable elements\n  s. 79 Summary\n  s. 80 Key terms and concepts\n  s
- . 80 Assessment material\nKap. 4 Measuring relevant costs and revenues for
-  decision-making:\n  s. 86 (kapittelstart)\n  s. 87 Identifying relevant c
- osts and revenues\n  s. 88 Importance of qualitative/non-financial factors
- \n  s. 88 Special pricing decisions\n  s. 93 Product mix decisions when ca
- pacity constraints exist\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan
- ). Alle kapitler skal være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 1\, s. 4–28 + kap. 2\, s. 29–40
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 1 Introduct
+ ion to management accounting:\n  s. 4 (kapittelstart)\n  s. 5 The users of
+  accounting information\n  s. 6 Differences between management accounting 
+ and financial accounting\n  s. 7 The decision-making\, planning and contro
+ l process\n  s. 11 The impact of the changing business environment on mana
+ gement accounting\n  s. 19 Focus on customer satisfaction and new manageme
+ nt approaches\n  s. 22 Functions of management accounting\n  s. 23 Summary
+  of the contents of this book\n  s. 26 Summary\n  s. 27 Key terms and conc
+ epts\n  s. 28 Assessment material\nKap. 2 An introduction to cost terms an
+ d concepts:\n  s. 29 (kapittelstart)\n  s. 30 Cost objects\n  s. 31 Manufa
+ cturing\, merchandising and service organizations\n  s. 31 Direct and indi
+ rect costs\n  s. 35 Period and product costs\n  s. 37 Cost behaviour\n\nPe
+ nsum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal være gj
+ ennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261101-1230-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261101T123000
-DTEND;TZID=Europe/Oslo:20261101T130000
-TRANSP:OPAQUE
-SUMMARY:Pause
-DESCRIPTION:30 min buffer ved fagbytte (pusterom hvis noe tar lengre tid).
-CATEGORIES:PAUSE
-END:VEVENT
-BEGIN:VEVENT
-UID:20261101-1300-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261101T130000
-DTEND;TZID=Europe/Oslo:20261101T160000
-TRANSP:OPAQUE
-SUMMARY:Gå igjennom der du henger etter
-DESCRIPTION:Fyll hull fra uka: det du ikke rakk\, det du ikke forsto\, og o
- ppgaver du hoppet over – i alle fag.
-CATEGORIES:CATCHUP
-END:VEVENT
-BEGIN:VEVENT
 UID:20261101-1630-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261101T163000
 DTEND;TZID=Europe/Oslo:20261101T173000
 TRANSP:OPAQUE
@@ -701,7 +633,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261101-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261101T200000
 DTEND;TZID=Europe/Oslo:20261101T201500
 TRANSP:OPAQUE
@@ -711,23 +643,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T051500
 DTEND;TZID=Europe/Oslo:20261102T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261102-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261102-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T053500
 DTEND;TZID=Europe/Oslo:20261102T061500
 TRANSP:OPAQUE
@@ -736,7 +661,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T061500
 DTEND;TZID=Europe/Oslo:20261102T070000
 TRANSP:OPAQUE
@@ -745,22 +670,22 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T070000
 DTEND;TZID=Europe/Oslo:20261102T095500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 7.7 (forts.)\, 7.11–7.12\, 8.1
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n7.7 E
- lasticities – fortsett der du slapp\n7.11 Infinite Sequences (bare førs
- te del)\n7.12 L'Hôpital's Rule\n8.1 Intuition\n\nLes teorien\, regn eksem
- plene og gjør oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, ikke
-  12.10)\; for anvendelser trenger du bare se hvordan verktøyet settes opp
- . Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 7.4 (forts.)\, 7.5–7.6
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n7.4 L
+ inear Approximations – fortsett der du slapp\n7.5 Polynomial Approximati
+ ons\n7.6 Taylor's Formula\n\nLes teorien\, regn eksemplene og gjør oppgav
+ ene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvende
+ lser trenger du bare se hvordan verktøyet settes opp. Seksjonstitler fra 
+ Pearsons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-0955-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T095500
 DTEND;TZID=Europe/Oslo:20261102T101500
 TRANSP:OPAQUE
@@ -770,7 +695,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-1015-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T101500
 DTEND;TZID=Europe/Oslo:20261102T120000
 TRANSP:OPAQUE
@@ -781,7 +706,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-1200-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T120000
 DTEND;TZID=Europe/Oslo:20261102T121500
 TRANSP:OPAQUE
@@ -791,7 +716,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-1215-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T121500
 DTEND;TZID=Europe/Oslo:20261102T140000
 TRANSP:OPAQUE
@@ -802,7 +727,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-1400-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T140000
 DTEND;TZID=Europe/Oslo:20261102T160000
 TRANSP:OPAQUE
@@ -814,22 +739,21 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-1600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T160000
 DTEND;TZID=Europe/Oslo:20261102T180000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 34: Course intro & Getting started wi
- th VS Code
-DESCRIPTION:Uke 34: Course intro & Getting started with VS Code\n\nGå gjen
- nom notebooken og gjør øvingsarket for uka. Materiale (Jupyter-notebooks
- \, skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34
- –39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke
-  ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 40: NumPy
+DESCRIPTION:Uke 40: NumPy\n\nGå gjennom notebooken og gjør øvingsarket f
+ or uka. Fram til BUD1-eksamen: bare NumPy\, pandas og matplotlib. Material
+ e (Jupyter-notebooks\, skript\, øvingsark\, slides): github.com/isabelhov
+ dahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uke 40–4
+ 5). Lenker per uke ligger under Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-1800-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T180000
 DTEND;TZID=Europe/Oslo:20261102T183000
 TRANSP:OPAQUE
@@ -839,47 +763,54 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261102-1830-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T183000
 DTEND;TZID=Europe/Oslo:20261102T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 8.1 (forts.)
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n8.1 I
- ntuition – fortsett der du slapp\n\nLes teorien\, regn eksemplene og gj
- ør oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; f
- or anvendelser trenger du bare se hvordan verktøyet settes opp. Seksjonst
- itler fra Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 7.6 (forts.)\, 7.7
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n7.6 T
+ aylor's Formula – fortsett der du slapp\n7.7 Elasticities\n\nLes teorien
+ \, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outline (ik
+ ke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan verktøy
+ et settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261102-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261102-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261102T200000
-DTEND;TZID=Europe/Oslo:20261102T201500
+DTEND;TZID=Europe/Oslo:20261102T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 2\, s. 41–53 + kap. 3\, s. 56
+ –76
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 41 Relevant and irrelevant costs and revenues\ns. 42 Avoidable and unavoid
+ able costs\ns. 43 Sunk costs\ns. 44 Opportunity costs\ns. 45 Incremental a
+ nd marginal costs\ns. 47 Controllable and uncontrollable costs\ns. 48 The 
+ cost and management accounting information system\ns. 49 Summary\ns. 50 Ke
+ y terms and concepts\ns. 57 Curvilinear CVP relationships\ns. 58 Linear CV
+ P relationships\ns. 60 A numerical approach to cost-volume-profit analysis
+ \ns. 64 The contribution margin ratio\ns. 65 Relevant range\ns. 65 Margin 
+ of safety\ns. 66 Constructing the break-even or CVP chart\ns. 67 Alternati
+ ve presentation of cost-volume-profit analysis\ns. 70 Multi-product cost-v
+ olume-profit analysis\ns. 72 Operating leverage\ns. 74 Cost-volume-profit 
+ analysis assumptions and limitations\ns. 76 The impact of information tech
+ nology
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T051500
 DTEND;TZID=Europe/Oslo:20261103T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261103-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261103-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T053500
 DTEND;TZID=Europe/Oslo:20261103T061500
 TRANSP:OPAQUE
@@ -888,7 +819,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T061500
 DTEND;TZID=Europe/Oslo:20261103T070000
 TRANSP:OPAQUE
@@ -897,22 +828,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T070000
 DTEND;TZID=Europe/Oslo:20261103T123000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 8.1 (forts.)\, 8.2–8.5
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n8.1 I
- ntuition – fortsett der du slapp\n8.2 Definitions\n8.3 General Propertie
- s\n8.4 First Derivative Tests\n8.5 Second Derivative Tests\n\nLes teorien\
- , regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outline (ikk
- e 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan verktøye
- t settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 7.7 (forts.)\, 7.11–7.12\, 8.1–8.3
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n7.7 E
+ lasticities – fortsett der du slapp\n7.11 Infinite Sequences (bare førs
+ te del)\n7.12 L'Hôpital's Rule\n8.1 Intuition\n8.2 Definitions\n8.3 Gener
+ al Properties\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum 
+ fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger
+  du bare se hvordan verktøyet settes opp. Seksjonstitler fra Pearsons inn
+ holdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-1230-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T123000
 DTEND;TZID=Europe/Oslo:20261103T143000
 TRANSP:OPAQUE
@@ -924,23 +856,22 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-1430-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T143000
 DTEND;TZID=Europe/Oslo:20261103T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 34 (forts.) + uke 35: Python basics &
-  Version control with git
-DESCRIPTION:Uke 34: Course intro & Getting started with VS Code – fortset
- t der du slapp\nUke 35: Python basics & Version control with git\n\nGå gj
- ennom notebooken og gjør øvingsarket for uka. Materiale (Jupyter-noteboo
- ks\, skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34
- –39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke
-  ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 40 (forts.)
+DESCRIPTION:Uke 40: NumPy – fortsett der du slapp\n\nGå gjennom notebook
+ en og gjør øvingsarket for uka. Fram til BUD1-eksamen: bare NumPy\, pand
+ as og matplotlib. Materiale (Jupyter-notebooks\, skript\, øvingsark\, sli
+ des): github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfo
+ ltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canv
+ as.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T170000
 DTEND;TZID=Europe/Oslo:20261103T173000
 TRANSP:OPAQUE
@@ -950,69 +881,65 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261103-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T173000
 DTEND;TZID=Europe/Oslo:20261103T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 4\, s. 96–116 + kap. 5\, s. 117–1
- 28
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 4 Me
- asuring relevant costs and revenues for decision-making:\n  s. 96 Replacem
- ent of equipment: The irrelevance of past costs\n  s. 99 Outsourcing and m
- ake-or-buy decisions\n  s. 103 Discontinuation decisions\n  s. 105 Determi
- ning the relevant costs of direct materials\n  s. 105 Determining the rele
- vant costs of direct labour\n  s. 106 Incorporating risk and uncertainty i
- nto the decision-making process\n  s. 109 Summary\n  s. 110 Key terms and 
- concepts\n  s. 111 Assessment material\nKap. 5 Pricing decisions and profi
- tability analysis:\n  s. 117 (kapittelstart)\n  s. 118 The role of cost in
- formation in pricing decisions\n  s. 118 A price-setting firm facing short
- -run pricing decisions\n  s. 119 A price-setting firm facing long-run pric
- ing decisions\n  s. 125 A price-taking firm facing short-run product mix d
- ecisions\n  s. 126 A price-taking firm facing long-run product mix decisio
- ns\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal 
- være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 2\, s. 41–53 + kap. 3\, s. 56–76
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 2 An introd
+ uction to cost terms and concepts:\n  s. 41 Relevant and irrelevant costs 
+ and revenues\n  s. 42 Avoidable and unavoidable costs\n  s. 43 Sunk costs\
+ n  s. 44 Opportunity costs\n  s. 45 Incremental and marginal costs\n  s. 4
+ 7 Controllable and uncontrollable costs\n  s. 48 The cost and management a
+ ccounting information system\n  s. 49 Summary\n  s. 50 Key terms and conce
+ pts\n  s. 51 Assessment material\nKap. 3 Cost-volume-profit analysis:\n  s
+ . 56 (kapittelstart)\n  s. 57 Curvilinear CVP relationships\n  s. 58 Linea
+ r CVP relationships\n  s. 60 A numerical approach to cost-volume-profit an
+ alysis\n  s. 64 The contribution margin ratio\n  s. 65 Relevant range\n  s
+ . 65 Margin of safety\n  s. 66 Constructing the break-even or CVP chart\n 
+  s. 67 Alternative presentation of cost-volume-profit analysis\n  s. 70 Mu
+ lti-product cost-volume-profit analysis\n  s. 72 Operating leverage\n  s. 
+ 74 Cost-volume-profit analysis assumptions and limitations\n  s. 76 The im
+ pact of information technology\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD
+ 1-plan). Alle kapitler skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261103-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261103-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261103T200000
-DTEND;TZID=Europe/Oslo:20261103T201500
+DTEND;TZID=Europe/Oslo:20261103T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
-END:VEVENT
-BEGIN:VEVENT
-UID:20261104-heldag-MARK-b0b5a356@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-TRANSP:TRANSPARENT
-SUMMARY:FRIST SOC1: Reflection note 2 kl. 23:59
-DESCRIPTION:Individuell\, leveres på Canvas (SOC1-plan). Skrives lørdag 3
- 1.10.
-CATEGORIES:MARK
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 3\, s. 77–85 + kap. 4\, s. 86
+ –110
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 77 Separation of costs into their fixed and variable elements\ns. 79 Summa
+ ry\ns. 80 Key terms and concepts\ns. 87 Identifying relevant costs and rev
+ enues\ns. 88 Importance of qualitative/non-financial factors\ns. 88 Specia
+ l pricing decisions\ns. 93 Product mix decisions when capacity constraints
+  exist\ns. 96 Replacement of equipment: The irrelevance of past costs\ns. 
+ 99 Outsourcing and make-or-buy decisions\ns. 103 Discontinuation decisions
+ \ns. 105 Determining the relevant costs of direct materials\ns. 105 Determ
+ ining the relevant costs of direct labour\ns. 106 Incorporating risk and u
+ ncertainty into the decision-making process\ns. 109 Summary\ns. 110 Key te
+ rms and concepts
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T051500
 DTEND;TZID=Europe/Oslo:20261104T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261104-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261104-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T053500
 DTEND;TZID=Europe/Oslo:20261104T061500
 TRANSP:OPAQUE
@@ -1021,7 +948,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T061500
 DTEND;TZID=Europe/Oslo:20261104T070000
 TRANSP:OPAQUE
@@ -1030,21 +957,21 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T070000
 DTEND;TZID=Europe/Oslo:20261104T075500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 8.6
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n8.6 I
- nflection Points\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pens
- um fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser tren
- ger du bare se hvordan verktøyet settes opp. Seksjonstitler fra Pearsons 
- innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 8.3 (forts.)
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n8.3 G
+ eneral Properties – fortsett der du slapp\n\nLes teorien\, regn eksemple
+ ne og gjør oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12
+ .10)\; for anvendelser trenger du bare se hvordan verktøyet settes opp. S
+ eksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-0755-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T075500
 DTEND;TZID=Europe/Oslo:20261104T081500
 TRANSP:OPAQUE
@@ -1054,7 +981,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-0815-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T081500
 DTEND;TZID=Europe/Oslo:20261104T100000
 TRANSP:OPAQUE
@@ -1064,7 +991,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1000-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T100000
 DTEND;TZID=Europe/Oslo:20261104T103000
 TRANSP:OPAQUE
@@ -1074,22 +1001,22 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1030-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T103000
 DTEND;TZID=Europe/Oslo:20261104T115500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 8.6 (forts.)\, 9.1
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n8.6 I
- nflection Points – fortsett der du slapp\n9.1 Extreme Points\n\nLes teor
- ien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outline 
- (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan verkt
- øyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.
- ).
+SUMMARY:Grinde på SAL: TECH1 – 8.3 (forts.)\, 8.4
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n8.3 G
+ eneral Properties – fortsett der du slapp\n8.4 First Derivative Tests\n\
+ nLes teorien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course
+  outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvor
+ dan verktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse
+  (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1155-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T115500
 DTEND;TZID=Europe/Oslo:20261104T121500
 TRANSP:OPAQUE
@@ -1099,7 +1026,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1215-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T121500
 DTEND;TZID=Europe/Oslo:20261104T140000
 TRANSP:OPAQUE
@@ -1110,7 +1037,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1400-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T140000
 DTEND;TZID=Europe/Oslo:20261104T160000
 TRANSP:OPAQUE
@@ -1122,20 +1049,22 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T160000
 DTEND;TZID=Europe/Oslo:20261104T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 36: Decisions
-DESCRIPTION:Uke 36: Decisions\n\nGå gjennom notebooken og gjør øvingsark
- et for uka. Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): 
- github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/T
- ECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 40 (forts.)
+DESCRIPTION:Uke 40: NumPy – fortsett der du slapp\n\nGå gjennom notebook
+ en og gjør øvingsarket for uka. Fram til BUD1-eksamen: bare NumPy\, pand
+ as og matplotlib. Materiale (Jupyter-notebooks\, skript\, øvingsark\, sli
+ des): github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfo
+ ltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canv
+ as.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T170000
 DTEND;TZID=Europe/Oslo:20261104T173000
 TRANSP:OPAQUE
@@ -1145,56 +1074,62 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261104-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T173000
 DTEND;TZID=Europe/Oslo:20261104T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 5\, s. 129–143 + kap. 6\, s. 144–
- 158
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 5 Pr
- icing decisions and profitability analysis:\n  s. 129 Surveys of practice 
- relating to pricing decisions\n  s. 129 Limitations of cost-plus pricing\n
-   s. 131 Reasons for using cost-plus pricing\n  s. 131 Pricing policies\n 
-  s. 133 Customer profitability analysis\n  s. 137 Summary\n  s. 139 Key te
- rms and concepts\n  s. 139 Assessment material\nKap. 6 Capital investment 
- decisions: Appraisal methods:\n  s. 144 (kapittelstart)\n  s. 145 The oppo
- rtunity cost of an investment\n  s. 147 Compounding and discounting\n  s. 
- 150 The concept of net present value\n  s. 151 Calculating net present val
- ues\n  s. 153 Internal rate of return\n  s. 157 Relevant cash flows\n  s. 
- 157 Comparison of net present value and internal rate of return\n\nPensum:
-  kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjennom
- gått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 3\, s. 77–85 + kap. 4\, s. 86–110
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 3 Cost-volu
+ me-profit analysis:\n  s. 77 Separation of costs into their fixed and vari
+ able elements\n  s. 79 Summary\n  s. 80 Key terms and concepts\n  s. 80 As
+ sessment material\nKap. 4 Measuring relevant costs and revenues for decisi
+ on-making:\n  s. 86 (kapittelstart)\n  s. 87 Identifying relevant costs an
+ d revenues\n  s. 88 Importance of qualitative/non-financial factors\n  s. 
+ 88 Special pricing decisions\n  s. 93 Product mix decisions when capacity 
+ constraints exist\n  s. 96 Replacement of equipment: The irrelevance of pa
+ st costs\n  s. 99 Outsourcing and make-or-buy decisions\n  s. 103 Disconti
+ nuation decisions\n  s. 105 Determining the relevant costs of direct mater
+ ials\n  s. 105 Determining the relevant costs of direct labour\n  s. 106 I
+ ncorporating risk and uncertainty into the decision-making process\n  s. 1
+ 09 Summary\n  s. 110 Key terms and concepts\n\nPensum: kap. 1–10\, 12 og
+  14–16 (BUD1-plan). Alle kapitler skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261104-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261104-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261104T200000
-DTEND;TZID=Europe/Oslo:20261104T201500
+DTEND;TZID=Europe/Oslo:20261104T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 4\, s. 111–116 + kap. 5\, s. 1
+ 17–143 + kap. 6\, s. 144–146
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 118 The role of cost information in pricing decisions\ns. 118 A price-sett
+ ing firm facing short-run pricing decisions\ns. 119 A price-setting firm f
+ acing long-run pricing decisions\ns. 125 A price-taking firm facing short-
+ run product mix decisions\ns. 126 A price-taking firm facing long-run prod
+ uct mix decisions\ns. 129 Surveys of practice relating to pricing decision
+ s\ns. 129 Limitations of cost-plus pricing\ns. 131 Reasons for using cost-
+ plus pricing\ns. 131 Pricing policies\ns. 133 Customer profitability analy
+ sis\ns. 137 Summary\ns. 139 Key terms and concepts\ns. 145 The opportunity
+  cost of an investment
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T051500
 DTEND;TZID=Europe/Oslo:20261105T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261105-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261105-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T053500
 DTEND;TZID=Europe/Oslo:20261105T061500
 TRANSP:OPAQUE
@@ -1203,7 +1138,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T061500
 DTEND;TZID=Europe/Oslo:20261105T070000
 TRANSP:OPAQUE
@@ -1212,25 +1147,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T070000
 DTEND;TZID=Europe/Oslo:20261105T123000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 9.1 (forts.)\, 9.2–9.3\, 9.5–9.6\, 10
- .1
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n9.1 E
- xtreme Points – fortsett der du slapp\n9.2 Simple Tests for Extreme Poin
- ts\n9.3 Economic Examples (anvendelse)\n9.5 Further Economic Examples (anv
- endelse)\n9.6 Local Extreme Points\n10.1 Indefinite Integrals\n\nLes teori
- en\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outline (
- ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan verkt
- øyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.
- ).
+SUMMARY:Grinde på SAL: TECH1 – 8.5–8.6\, 9.1–9.3
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n8.5 S
+ econd Derivative Tests\n8.6 Inflection Points\n9.1 Extreme Points\n9.2 Sim
+ ple Tests for Extreme Points\n9.3 Economic Examples (anvendelse)\n\nLes te
+ orien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outlin
+ e (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan ver
+ ktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. ut
+ g.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-1230-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T123000
 DTEND;TZID=Europe/Oslo:20261105T143000
 TRANSP:OPAQUE
@@ -1242,21 +1175,21 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-1430-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T143000
 DTEND;TZID=Europe/Oslo:20261105T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 36 (forts.) + uke 37: Loops
-DESCRIPTION:Uke 36: Decisions – fortsett der du slapp\nUke 37: Loops\n\nG
- å gjennom notebooken og gjør øvingsarket for uka. Materiale (Jupyter-no
- tebooks\, skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (u
- ke 34–39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker pe
- r uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 41: Intro to pandas
+DESCRIPTION:Uke 41: Intro to pandas\n\nGå gjennom notebooken og gjør øvi
+ ngsarket for uka. Fram til BUD1-eksamen: bare NumPy\, pandas og matplotlib
+ . Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): github.com
+ /isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (
+ uke 40–45). Lenker per uke ligger under Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T170000
 DTEND;TZID=Europe/Oslo:20261105T173000
 TRANSP:OPAQUE
@@ -1266,56 +1199,61 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261105-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T173000
 DTEND;TZID=Europe/Oslo:20261105T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 6\, s. 159–175 + kap. 7\, s. 178–
- 190
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 6 Ca
- pital investment decisions: Appraisal methods:\n  s. 159 Techniques that i
- gnore the time value of money\n  s. 160 Payback method\n  s. 163 Accountin
- g rate of return\n  s. 164 Qualitative factors\n  s. 166 Weighted average 
- cost of capital\n  s. 166 Taxation and investment decisions\n  s. 168 Summ
- ary\n  s. 169 Key terms and concepts\n  s. 171 Assessment material\nKap. 7
-  Cost assignment:\n  s. 178 (kapittelstart)\n  s. 179 Assignment of direct
-  and indirect costs\n  s. 181 Different costs for different purposes\n  s.
-  181 Cost-benefit issues and cost system design\n  s. 182 Plant-wide (blan
- ket) overhead rates\n  s. 185 The two-stage allocation process\n  s. 186 A
- n illustration of the two-stage process for a traditional costing system\n
- \nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal vær
- e gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 4\, s. 111–116 + kap. 5\, s. 117–
+ 143 + kap. 6\, s. 144–146
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 4 Measuring
+  relevant costs and revenues for decision-making:\n  s. 111 Assessment mat
+ erial\nKap. 5 Pricing decisions and profitability analysis:\n  s. 117 (kap
+ ittelstart)\n  s. 118 The role of cost information in pricing decisions\n 
+  s. 118 A price-setting firm facing short-run pricing decisions\n  s. 119 
+ A price-setting firm facing long-run pricing decisions\n  s. 125 A price-t
+ aking firm facing short-run product mix decisions\n  s. 126 A price-taking
+  firm facing long-run product mix decisions\n  s. 129 Surveys of practice 
+ relating to pricing decisions\n  s. 129 Limitations of cost-plus pricing\n
+   s. 131 Reasons for using cost-plus pricing\n  s. 131 Pricing policies\n 
+  s. 133 Customer profitability analysis\n  s. 137 Summary\n  s. 139 Key te
+ rms and concepts\n  s. 139 Assessment material\nKap. 6 Capital investment 
+ decisions: Appraisal methods:\n  s. 144 (kapittelstart)\n  s. 145 The oppo
+ rtunity cost of an investment\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1
+ -plan). Alle kapitler skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261105-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261105-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261105T200000
-DTEND;TZID=Europe/Oslo:20261105T201500
+DTEND;TZID=Europe/Oslo:20261105T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 6\, s. 147–170
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 147 Compounding and discounting\ns. 150 The concept of net present value\n
+ s. 151 Calculating net present values\ns. 153 Internal rate of return\ns. 
+ 157 Relevant cash flows\ns. 157 Comparison of net present value and intern
+ al rate of return\ns. 159 Techniques that ignore the time value of money\n
+ s. 160 Payback method\ns. 163 Accounting rate of return\ns. 164 Qualitativ
+ e factors\ns. 166 Weighted average cost of capital\ns. 166 Taxation and in
+ vestment decisions\ns. 168 Summary\ns. 169 Key terms and concepts
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T051500
 DTEND;TZID=Europe/Oslo:20261106T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261106-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261106-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T053500
 DTEND;TZID=Europe/Oslo:20261106T061500
 TRANSP:OPAQUE
@@ -1324,7 +1262,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T061500
 DTEND;TZID=Europe/Oslo:20261106T070000
 TRANSP:OPAQUE
@@ -1333,23 +1271,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T070000
 DTEND;TZID=Europe/Oslo:20261106T115500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 10.1 (forts.)\, 10.2–10.5
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n10.1 
- Indefinite Integrals – fortsett der du slapp\n10.2 Area and Definite Int
- egrals\n10.3 Properties of Definite Integrals\n10.4 Economic Applications 
- (anvendelse)\n10.5 Integration by Parts\n\nLes teorien\, regn eksemplene o
- g gjør oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)
- \; for anvendelser trenger du bare se hvordan verktøyet settes opp. Seksj
- onstitler fra Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 9.5–9.6\, 10.1–10.3
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n9.5 F
+ urther Economic Examples (anvendelse)\n9.6 Local Extreme Points\n10.1 Inde
+ finite Integrals\n10.2 Area and Definite Integrals\n10.3 Properties of Def
+ inite Integrals\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensu
+ m fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser treng
+ er du bare se hvordan verktøyet settes opp. Seksjonstitler fra Pearsons i
+ nnholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-1155-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T115500
 DTEND;TZID=Europe/Oslo:20261106T121500
 TRANSP:OPAQUE
@@ -1359,7 +1297,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-1215-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T121500
 DTEND;TZID=Europe/Oslo:20261106T140000
 TRANSP:OPAQUE
@@ -1369,21 +1307,22 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-1400-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T140000
 DTEND;TZID=Europe/Oslo:20261106T150000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 37 (forts.)
-DESCRIPTION:Uke 37: Loops – fortsett der du slapp\n\nGå gjennom notebook
- en og gjør øvingsarket for uka. Materiale (Jupyter-notebooks\, skript\, 
- øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og gith
- ub.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under 
- Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 41 (forts.)
+DESCRIPTION:Uke 41: Intro to pandas – fortsett der du slapp\n\nGå gjenno
+ m notebooken og gjør øvingsarket for uka. Fram til BUD1-eksamen: bare Nu
+ mPy\, pandas og matplotlib. Materiale (Jupyter-notebooks\, skript\, øving
+ sark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com
+ /richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under Module
+ s på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-1500-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T150000
 DTEND;TZID=Europe/Oslo:20261106T170000
 TRANSP:OPAQUE
@@ -1395,27 +1334,29 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-1700-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T170000
 DTEND;TZID=Europe/Oslo:20261106T180000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 7\, s. 191–204 + kap. 8\, s. 205–
- 210
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 7 Co
- st assignment:\n  s. 191 Extracting relevant costs for decision-making\n  
- s. 192 Budgeted overhead rates\n  s. 193 Under- and over-recovery of overh
- eads\n  s. 195 Non-manufacturing overheads\n  s. 196 Cost assignment in no
- n-manufacturing organizations\n  s. 198 Summary\n  s. 200 Key terms and co
- ncepts\n  s. 201 Assessment material\nKap. 8 Activity-based costing:\n  s.
-  205 (kapittelstart)\n  s. 206 Comparison of traditional and ABC systems\n
-   s. 209 Volume-based and non-volume-based cost drivers\n\nPensum: kap. 1
- –10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjennomgått i
- nnen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 6\, s. 147–170
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 6 Capital i
+ nvestment decisions: Appraisal methods:\n  s. 147 Compounding and discount
+ ing\n  s. 150 The concept of net present value\n  s. 151 Calculating net p
+ resent values\n  s. 153 Internal rate of return\n  s. 157 Relevant cash fl
+ ows\n  s. 157 Comparison of net present value and internal rate of return\
+ n  s. 159 Techniques that ignore the time value of money\n  s. 160 Payback
+  method\n  s. 163 Accounting rate of return\n  s. 164 Qualitative factors\
+ n  s. 166 Weighted average cost of capital\n  s. 166 Taxation and investme
+ nt decisions\n  s. 168 Summary\n  s. 169 Key terms and concepts\n\nPensum:
+  kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjennom
+ gått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261106-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261106T200000
 DTEND;TZID=Europe/Oslo:20261106T201500
 TRANSP:OPAQUE
@@ -1425,7 +1366,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261107-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261107T080000
 DTEND;TZID=Europe/Oslo:20261107T091500
 TRANSP:OPAQUE
@@ -1433,56 +1374,36 @@ SUMMARY:Være på gymmen
 CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
-UID:20261107-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261107-1000-COM1@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261107T100000
-DTEND;TZID=Europe/Oslo:20261107T110000
+DTEND;TZID=Europe/Oslo:20261107T140000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 10.6
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n10.6 
- Integration by Substitution\n\nLes teorien\, regn eksemplene og gjør oppg
- avene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anven
- delser trenger du bare se hvordan verktøyet settes opp. Seksjonstitler fr
- a Pearsons innholdsfortegnelse (6. utg.).
-CATEGORIES:TECH1
-END:VEVENT
-BEGIN:VEVENT
-UID:20261107-1100-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261107T110000
-DTEND;TZID=Europe/Oslo:20261107T113000
-TRANSP:OPAQUE
-SUMMARY:Pause
-DESCRIPTION:30 min buffer ved fagbytte (pusterom hvis noe tar lengre tid).
-CATEGORIES:PAUSE
-END:VEVENT
-BEGIN:VEVENT
-UID:20261107-1130-COM1@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261107T113000
-DTEND;TZID=Europe/Oslo:20261107T123000
-TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: COM1 – EA3: revider refleksjonsteksten etter CA1-
- feedback
-DESCRIPTION:Feedback på CA1 (technical report) skulle komme innen 1.11. EA
- 3 skal dekke hvordan du reagerte på feedbacken og hvordan du brukte den. 
- NB: Generativ KI er ikke tillatt i utarbeidelsen av teksten.
+SUMMARY:Grinde på SAL: COM1 – EA3 refleksjonstekst (hele teksten)
+DESCRIPTION:650–850 ord. Flyttet fra 30.10 fordi informasjonen manglet. S
+ truktur fra EA3-oppgaven: 1) Introduction 2) Personal learning development
+ : own performance\, feedback on your work (inkl. feedbacken på CA1 techni
+ cal report)\, activities in class and group work – bruk Gibbs' cycle 3) 
+ Bruk av generativ KI i kursarbeidet (hvis du har brukt det) 4) Generativ K
+ I i utdanning og samfunn 5) Conclusion.\nNB: Generativ KI er ikke tillatt 
+ i utarbeidelsen av teksten. Leveres samlet i porteføljen 21.11 (frist 27.
+ 11 kl. 12:00).
 CATEGORIES:COM1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261107-1230-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261107T123000
-DTEND;TZID=Europe/Oslo:20261107T130000
+UID:20261107-1400-PAUSE@grindeplan-h26
+DTSTAMP:20261031T121947Z
+DTSTART;TZID=Europe/Oslo:20261107T140000
+DTEND;TZID=Europe/Oslo:20261107T143000
 TRANSP:OPAQUE
 SUMMARY:Pause
 DESCRIPTION:30 min buffer ved fagbytte (pusterom hvis noe tar lengre tid).
 CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
-UID:20261107-1300-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
-DTSTART;TZID=Europe/Oslo:20261107T130000
+UID:20261107-1430-CATCHUP@grindeplan-h26
+DTSTAMP:20261031T121947Z
+DTSTART;TZID=Europe/Oslo:20261107T143000
 DTEND;TZID=Europe/Oslo:20261107T160000
 TRANSP:OPAQUE
 SUMMARY:Gå igjennom der du henger etter
@@ -1492,7 +1413,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261107-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261107T200000
 DTEND;TZID=Europe/Oslo:20261107T201500
 TRANSP:OPAQUE
@@ -1502,7 +1423,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261108-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T080000
 DTEND;TZID=Europe/Oslo:20261108T091500
 TRANSP:OPAQUE
@@ -1511,22 +1432,22 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261108-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T100000
 DTEND;TZID=Europe/Oslo:20261108T110000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 10.6 (forts.)\, 10.7
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n10.6 
- Integration by Substitution – fortsett der du slapp\n10.7 Infinite Inter
- vals of Integration\n\nLes teorien\, regn eksemplene og gjør oppgavene. P
- ensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser t
- renger du bare se hvordan verktøyet settes opp. Seksjonstitler fra Pearso
- ns innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 10.3 (forts.)\, 10.4
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n10.3 
+ Properties of Definite Integrals – fortsett der du slapp\n10.4 Economic 
+ Applications (anvendelse)\n\nLes teorien\, regn eksemplene og gjør oppgav
+ ene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvende
+ lser trenger du bare se hvordan verktøyet settes opp. Seksjonstitler fra 
+ Pearsons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261108-1100-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T110000
 DTEND;TZID=Europe/Oslo:20261108T113000
 TRANSP:OPAQUE
@@ -1536,20 +1457,22 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261108-1130-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T113000
 DTEND;TZID=Europe/Oslo:20261108T123000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 38: Functions
-DESCRIPTION:Uke 38: Functions\n\nGå gjennom notebooken og gjør øvingsark
- et for uka. Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): 
- github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/T
- ECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 41 (forts.)
+DESCRIPTION:Uke 41: Intro to pandas – fortsett der du slapp\n\nGå gjenno
+ m notebooken og gjør øvingsarket for uka. Fram til BUD1-eksamen: bare Nu
+ mPy\, pandas og matplotlib. Materiale (Jupyter-notebooks\, skript\, øving
+ sark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com
+ /richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under Module
+ s på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261108-1230-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T123000
 DTEND;TZID=Europe/Oslo:20261108T130000
 TRANSP:OPAQUE
@@ -1559,7 +1482,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261108-1300-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T130000
 DTEND;TZID=Europe/Oslo:20261108T160000
 TRANSP:OPAQUE
@@ -1570,7 +1493,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261108-1630-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T163000
 DTEND;TZID=Europe/Oslo:20261108T173000
 TRANSP:OPAQUE
@@ -1578,34 +1501,37 @@ SUMMARY:Rengjøring
 CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
-UID:20261108-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261108-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261108T200000
-DTEND;TZID=Europe/Oslo:20261108T201500
+DTEND;TZID=Europe/Oslo:20261108T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 6\, s. 171–175 + kap. 7\, s. 1
+ 78–197
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 179 Assignment of direct and indirect costs\ns. 181 Different costs for di
+ fferent purposes\ns. 181 Cost-benefit issues and cost system design\ns. 18
+ 2 Plant-wide (blanket) overhead rates\ns. 185 The two-stage allocation pro
+ cess\ns. 186 An illustration of the two-stage process for a traditional co
+ sting system\ns. 191 Extracting relevant costs for decision-making\ns. 192
+  Budgeted overhead rates\ns. 193 Under- and over-recovery of overheads\ns.
+  195 Non-manufacturing overheads\ns. 196 Cost assignment in non-manufactur
+ ing organizations
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T051500
 DTEND;TZID=Europe/Oslo:20261109T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261109-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261109-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T053500
 DTEND;TZID=Europe/Oslo:20261109T061500
 TRANSP:OPAQUE
@@ -1614,7 +1540,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T061500
 DTEND;TZID=Europe/Oslo:20261109T070000
 TRANSP:OPAQUE
@@ -1623,23 +1549,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T070000
 DTEND;TZID=Europe/Oslo:20261109T112500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 10.7 (forts.)\, 11.1–11.3
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n10.7 
- Infinite Intervals of Integration – fortsett der du slapp\n11.1 Interest
-  Periods and Effective Rates\n11.2 Continuous Compounding\n11.3 Present Va
- lue\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 
- course outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare s
- e hvordan verktøyet settes opp. Seksjonstitler fra Pearsons innholdsforte
- gnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 10.4 (forts.)\, 10.5–10.7\, 11.1
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n10.4 
+ Economic Applications (anvendelse) – fortsett der du slapp\n10.5 Integra
+ tion by Parts\n10.6 Integration by Substitution\n10.7 Infinite Intervals o
+ f Integration\n11.1 Interest Periods and Effective Rates\n\nLes teorien\, 
+ regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outline (ikke 
+ 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan verktøyet 
+ settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-1125-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T112500
 DTEND;TZID=Europe/Oslo:20261109T115500
 TRANSP:OPAQUE
@@ -1649,22 +1575,23 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-1155-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T115500
 DTEND;TZID=Europe/Oslo:20261109T135500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 38 (forts.) + uke 39: Python packages
-  & Virtual environments
-DESCRIPTION:Uke 38: Functions – fortsett der du slapp\nUke 39: Python pac
- kages & Virtual environments\n\nGå gjennom notebooken og gjør øvingsark
- et for uka. Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): 
- github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/T
- ECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 41 (forts.) + uke 42: Plotting (matpl
+ otlib)
+DESCRIPTION:Uke 41: Intro to pandas – fortsett der du slapp\nUke 42: Plot
+ ting (matplotlib)\n\nGå gjennom notebooken og gjør øvingsarket for uka.
+  Fram til BUD1-eksamen: bare NumPy\, pandas og matplotlib. Materiale (Jupy
+ ter-notebooks\, skript\, øvingsark\, slides): github.com/isabelhovdahl/TE
+ CH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Len
+ ker per uke ligger under Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-1355-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T135500
 DTEND;TZID=Europe/Oslo:20261109T141500
 TRANSP:OPAQUE
@@ -1674,7 +1601,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-1415-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T141500
 DTEND;TZID=Europe/Oslo:20261109T160000
 TRANSP:OPAQUE
@@ -1686,7 +1613,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-1600-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T160000
 DTEND;TZID=Europe/Oslo:20261109T180000
 TRANSP:OPAQUE
@@ -1698,49 +1625,58 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109-1800-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T180000
 DTEND;TZID=Europe/Oslo:20261109T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 8\, s. 211–231
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 8 Ac
- tivity-based costing:\n  s. 211 An illustration of the two-stage allocatio
- n process for ABC\n  s. 216 Designing ABC systems\n  s. 218 Activity hiera
- rchies\n  s. 221 Cost versus benefit considerations\n  s. 221 ABC cost man
- agement applications\n  s. 224 Summary\n  s. 225 Key terms and concepts\n 
-  s. 226 Assessment material\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-p
- lan). Alle kapitler skal være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 6\, s. 171–175 + kap. 7\, s. 178–
+ 197
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 6 Capital i
+ nvestment decisions: Appraisal methods:\n  s. 171 Assessment material\nKap
+ . 7 Cost assignment:\n  s. 178 (kapittelstart)\n  s. 179 Assignment of dir
+ ect and indirect costs\n  s. 181 Different costs for different purposes\n 
+  s. 181 Cost-benefit issues and cost system design\n  s. 182 Plant-wide (b
+ lanket) overhead rates\n  s. 185 The two-stage allocation process\n  s. 18
+ 6 An illustration of the two-stage process for a traditional costing syste
+ m\n  s. 191 Extracting relevant costs for decision-making\n  s. 192 Budget
+ ed overhead rates\n  s. 193 Under- and over-recovery of overheads\n  s. 19
+ 5 Non-manufacturing overheads\n  s. 196 Cost assignment in non-manufacturi
+ ng organizations\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle 
+ kapitler skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261109-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261109-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261109T200000
-DTEND;TZID=Europe/Oslo:20261109T201500
+DTEND;TZID=Europe/Oslo:20261109T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 7\, s. 198–204 + kap. 8\, s. 2
+ 05–231
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 198 Summary\ns. 200 Key terms and concepts\ns. 206 Comparison of tradition
+ al and ABC systems\ns. 209 Volume-based and non-volume-based cost drivers\
+ ns. 211 An illustration of the two-stage allocation process for ABC\ns. 21
+ 6 Designing ABC systems\ns. 218 Activity hierarchies\ns. 221 Cost versus b
+ enefit considerations\ns. 221 ABC cost management applications\ns. 224 Sum
+ mary\ns. 225 Key terms and concepts
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T051500
 DTEND;TZID=Europe/Oslo:20261110T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261110-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261110-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T053500
 DTEND;TZID=Europe/Oslo:20261110T061500
 TRANSP:OPAQUE
@@ -1749,7 +1685,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T061500
 DTEND;TZID=Europe/Oslo:20261110T070000
 TRANSP:OPAQUE
@@ -1758,23 +1694,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T070000
 DTEND;TZID=Europe/Oslo:20261110T120000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 11.3 (forts.)\, 11.4–11.7
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n11.3 
- Present Value – fortsett der du slapp\n11.4 Geometric Series\n11.5 Total
-  Present Value\n11.6 Mortgage Repayments\n11.7 Internal Rate of Return\n\n
- Les teorien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course 
- outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvord
- an verktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse 
- (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 11.1 (forts.)\, 11.2–11.5
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n11.1 
+ Interest Periods and Effective Rates – fortsett der du slapp\n11.2 Conti
+ nuous Compounding\n11.3 Present Value\n11.4 Geometric Series\n11.5 Total P
+ resent Value\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum f
+ ra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger 
+ du bare se hvordan verktøyet settes opp. Seksjonstitler fra Pearsons innh
+ oldsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-1200-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T120000
 DTEND;TZID=Europe/Oslo:20261110T140000
 TRANSP:OPAQUE
@@ -1786,15 +1722,14 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-1400-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T140000
 DTEND;TZID=Europe/Oslo:20261110T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 39 (forts.) + uke 40: More on git and
-  VS Code & NumPy
-DESCRIPTION:Uke 39: Python packages & Virtual environments – fortsett der
-  du slapp\nUke 40: More on git and VS Code & NumPy\n\nGå gjennom notebook
- en og gjør øvingsarket for uka. Materiale (Jupyter-notebooks\, skript\, 
+SUMMARY:Grinde på SAL: TECH2 – uke 42 (forts.)
+DESCRIPTION:Uke 42: Plotting (matplotlib) – fortsett der du slapp\n\nGå 
+ gjennom notebooken og gjør øvingsarket for uka. Fram til BUD1-eksamen: b
+ are NumPy\, pandas og matplotlib. Materiale (Jupyter-notebooks\, skript\, 
  øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og gith
  ub.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under 
  Modules på Canvas.
@@ -1802,7 +1737,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T170000
 DTEND;TZID=Europe/Oslo:20261110T173000
 TRANSP:OPAQUE
@@ -1812,55 +1747,59 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T173000
 DTEND;TZID=Europe/Oslo:20261110T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 9\, s. 235–264
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 9 Ma
- nagement control systems:\n  s. 235 (kapittelstart)\n  s. 237 The scope of
-  management control systems\n  s. 240 Different types of control mechanism
- s\n  s. 243 Feedback and feed-forward controls\n  s. 245 Management accoun
- ting control systems\n  s. 247 Responsibility centres\n  s. 249 Applying t
- he controllability principle\n  s. 253 Setting performance targets and det
- ermining how challenging they should be\n  s. 255 Determining how much inf
- luence managers should have in setting targets\n  s. 256 Harmful side-effe
- cts of controls\n  s. 258 Rewards and incentives\n  s. 259 Different appro
- aches that managers use to evaluate budgetees' performance\n  s. 261 Alter
- native uses of management accounting information\n  s. 263 Summary\n\nPens
- um: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjen
- nomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 7\, s. 198–204 + kap. 8\, s. 205–
+ 231
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 7 Cost assi
+ gnment:\n  s. 198 Summary\n  s. 200 Key terms and concepts\n  s. 201 Asses
+ sment material\nKap. 8 Activity-based costing:\n  s. 205 (kapittelstart)\n
+   s. 206 Comparison of traditional and ABC systems\n  s. 209 Volume-based 
+ and non-volume-based cost drivers\n  s. 211 An illustration of the two-sta
+ ge allocation process for ABC\n  s. 216 Designing ABC systems\n  s. 218 Ac
+ tivity hierarchies\n  s. 221 Cost versus benefit considerations\n  s. 221 
+ ABC cost management applications\n  s. 224 Summary\n  s. 225 Key terms and
+  concepts\n  s. 226 Assessment material\n\nPensum: kap. 1–10\, 12 og 14
+ –16 (BUD1-plan). Alle kapitler skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261110-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261110-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261110T200000
-DTEND;TZID=Europe/Oslo:20261110T201500
+DTEND;TZID=Europe/Oslo:20261110T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 9\, s. 235–272
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 237 The scope of management control systems\ns. 240 Different types of con
+ trol mechanisms\ns. 243 Feedback and feed-forward controls\ns. 245 Managem
+ ent accounting control systems\ns. 247 Responsibility centres\ns. 249 Appl
+ ying the controllability principle\ns. 253 Setting performance targets and
+  determining how challenging they should be\ns. 255 Determining how much i
+ nfluence managers should have in setting targets\ns. 256 Harmful side-effe
+ cts of controls\ns. 258 Rewards and incentives\ns. 259 Different approache
+ s that managers use to evaluate budgetees' performance\ns. 261 Alternative
+  uses of management accounting information\ns. 263 Summary\ns. 265 Key ter
+ ms and concepts
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T051500
 DTEND;TZID=Europe/Oslo:20261111T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261111-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261111-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T053500
 DTEND;TZID=Europe/Oslo:20261111T061500
 TRANSP:OPAQUE
@@ -1869,7 +1808,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T061500
 DTEND;TZID=Europe/Oslo:20261111T070000
 TRANSP:OPAQUE
@@ -1878,23 +1817,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T070000
 DTEND;TZID=Europe/Oslo:20261111T115500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 11.7 (forts.)\, 11.8\, 12.1–12.3
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n11.7 
- Internal Rate of Return – fortsett der du slapp\n11.8 A Glimpse at Diffe
- rence Equations\n12.1 Matrices and Vectors\n12.2 Systems of Linear Equatio
- ns\n12.3 Matrix Addition\n\nLes teorien\, regn eksemplene og gjør oppgave
- ne. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendel
- ser trenger du bare se hvordan verktøyet settes opp. Seksjonstitler fra P
- earsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 11.5 (forts.)\, 11.6–11.8\, 12.1
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n11.5 
+ Total Present Value – fortsett der du slapp\n11.6 Mortgage Repayments\n1
+ 1.7 Internal Rate of Return\n11.8 A Glimpse at Difference Equations\n12.1 
+ Matrices and Vectors\n\nLes teorien\, regn eksemplene og gjør oppgavene. 
+ Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser 
+ trenger du bare se hvordan verktøyet settes opp. Seksjonstitler fra Pears
+ ons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-1155-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T115500
 DTEND;TZID=Europe/Oslo:20261111T121500
 TRANSP:OPAQUE
@@ -1904,7 +1843,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-1215-LECT@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T121500
 DTEND;TZID=Europe/Oslo:20261111T140000
 TRANSP:OPAQUE
@@ -1915,7 +1854,7 @@ CATEGORIES:LECT
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-1400-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T140000
 DTEND;TZID=Europe/Oslo:20261111T160000
 TRANSP:OPAQUE
@@ -1927,21 +1866,22 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-1600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T160000
 DTEND;TZID=Europe/Oslo:20261111T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 40 (forts.)
-DESCRIPTION:Uke 40: More on git and VS Code & NumPy – fortsett der du sla
- pp\n\nGå gjennom notebooken og gjør øvingsarket for uka. Materiale (Jup
- yter-notebooks\, skript\, øvingsark\, slides): github.com/isabelhovdahl/T
- ECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Le
- nker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 42 (forts.)
+DESCRIPTION:Uke 42: Plotting (matplotlib) – fortsett der du slapp\n\nGå 
+ gjennom notebooken og gjør øvingsarket for uka. Fram til BUD1-eksamen: b
+ are NumPy\, pandas og matplotlib. Materiale (Jupyter-notebooks\, skript\, 
+ øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og gith
+ ub.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under 
+ Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T170000
 DTEND;TZID=Europe/Oslo:20261111T173000
 TRANSP:OPAQUE
@@ -1951,36 +1891,50 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T173000
 DTEND;TZID=Europe/Oslo:20261111T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 9\, s. 265–272 + kap. 10\, s. 273
- –293
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 9 Ma
- nagement control systems:\n  s. 265 Key terms and concepts\n  s. 267 Asses
- sment material\nKap. 10 The budgeting process:\n  s. 273 (kapittelstart)\n
-   s. 274 The strategic planning\, budgeting and control process\n  s. 277 
- The multiple functions of budgets\n  s. 278 Conflicting roles of budgets\n
-   s. 279 The budget period\n  s. 280 Administration of the budgeting proce
- ss\n  s. 281 Stages in the budgeting process\n  s. 284 A detailed illustra
- tion\n  s. 292 Computerized budgeting\n\nPensum: kap. 1–10\, 12 og 14–
- 16 (BUD1-plan). Alle kapitler skal være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 9\, s. 235–272
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 9 Managemen
+ t control systems:\n  s. 235 (kapittelstart)\n  s. 237 The scope of manage
+ ment control systems\n  s. 240 Different types of control mechanisms\n  s.
+  243 Feedback and feed-forward controls\n  s. 245 Management accounting co
+ ntrol systems\n  s. 247 Responsibility centres\n  s. 249 Applying the cont
+ rollability principle\n  s. 253 Setting performance targets and determinin
+ g how challenging they should be\n  s. 255 Determining how much influence 
+ managers should have in setting targets\n  s. 256 Harmful side-effects of 
+ controls\n  s. 258 Rewards and incentives\n  s. 259 Different approaches t
+ hat managers use to evaluate budgetees' performance\n  s. 261 Alternative 
+ uses of management accounting information\n  s. 263 Summary\n  s. 265 Key 
+ terms and concepts\n  s. 267 Assessment material\n\nPensum: kap. 1–10\, 
+ 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjennomgått innen 22.
+ 11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261111-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261111-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261111T200000
-DTEND;TZID=Europe/Oslo:20261111T201500
+DTEND;TZID=Europe/Oslo:20261111T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 10\, s. 273–305
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 274 The strategic planning\, budgeting and control process\ns. 277 The mul
+ tiple functions of budgets\ns. 278 Conflicting roles of budgets\ns. 279 Th
+ e budget period\ns. 280 Administration of the budgeting process\ns. 281 St
+ ages in the budgeting process\ns. 284 A detailed illustration\ns. 292 Comp
+ uterized budgeting\ns. 294 Activity-based budgeting\ns. 296 Zero-based bud
+ geting\ns. 298 Criticisms of budgeting\ns. 303 Summary\ns. 304 Key terms a
+ nd concepts
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-heldag-MARK-b329bddc@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 TRANSP:TRANSPARENT
@@ -1990,23 +1944,16 @@ CATEGORIES:MARK
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T051500
 DTEND;TZID=Europe/Oslo:20261112T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261112-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261112-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T053500
 DTEND;TZID=Europe/Oslo:20261112T061500
 TRANSP:OPAQUE
@@ -2015,7 +1962,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T061500
 DTEND;TZID=Europe/Oslo:20261112T070000
 TRANSP:OPAQUE
@@ -2024,22 +1971,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T070000
 DTEND;TZID=Europe/Oslo:20261112T120000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 12.3 (forts.)\, 12.4–12.6
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n12.3 
- Matrix Addition – fortsett der du slapp\n12.4 Algebra of Vectors\n12.5 M
- atrix Multiplication\n12.6 Rules for Matrix Multiplication\n\nLes teorien\
- , regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outline (ikk
- e 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan verktøye
- t settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 12.1 (forts.)\, 12.2–12.5
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n12.1 
+ Matrices and Vectors – fortsett der du slapp\n12.2 Systems of Linear Equ
+ ations\n12.3 Matrix Addition\n12.4 Algebra of Vectors\n12.5 Matrix Multipl
+ ication\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum fra TE
+ CH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du ba
+ re se hvordan verktøyet settes opp. Seksjonstitler fra Pearsons innholdsf
+ ortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-1200-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T120000
 DTEND;TZID=Europe/Oslo:20261112T140000
 TRANSP:OPAQUE
@@ -2051,22 +1999,23 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-1400-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T140000
 DTEND;TZID=Europe/Oslo:20261112T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 41: Intro to pandas + uke 42: Plottin
- g
-DESCRIPTION:Uke 41: Intro to pandas\nUke 42: Plotting\n\nGå gjennom notebo
- oken og gjør øvingsarket for uka. Materiale (Jupyter-notebooks\, skript\
- , øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og gi
- thub.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger unde
- r Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 42 (forts.) + uke 43: Grouping and ag
+ gregation (pandas)
+DESCRIPTION:Uke 42: Plotting (matplotlib) – fortsett der du slapp\nUke 43
+ : Grouping and aggregation (pandas)\n\nGå gjennom notebooken og gjør øv
+ ingsarket for uka. Fram til BUD1-eksamen: bare NumPy\, pandas og matplotli
+ b. Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): github.co
+ m/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 
+ (uke 40–45). Lenker per uke ligger under Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T170000
 DTEND;TZID=Europe/Oslo:20261112T173000
 TRANSP:OPAQUE
@@ -2076,31 +2025,28 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T173000
 DTEND;TZID=Europe/Oslo:20261112T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 10\, s. 294–310 + kap. 12\, s. 347
- –362
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 10 T
- he budgeting process:\n  s. 294 Activity-based budgeting\n  s. 296 Zero-ba
- sed budgeting\n  s. 298 Criticisms of budgeting\n  s. 303 Summary\n  s. 30
- 4 Key terms and concepts\n  s. 306 Assessment material\nKap. 12 Divisional
-  financial performance measures:\n  s. 347 (kapittelstart)\n  s. 348 Divis
- ional organizational structures\n  s. 350 Advantages and disadvantages of 
- divisionalization\n  s. 350 Prerequisites for successful divisionalization
- \n  s. 351 Distinguishing between the managerial and economic performance 
- of the division\n  s. 352 Alternative divisional profit measures\n  s. 353
-  Surveys of practice\n  s. 355 Return on investment\n  s. 356 Residual inc
- ome\n  s. 357 Economic value added (EVA)\n  s. 359 Addressing the dysfunct
- ional consequences of short-term financial performance measures\n\nPensum:
-  kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjennom
- gått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 10\, s. 273–305
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 10 The budg
+ eting process:\n  s. 273 (kapittelstart)\n  s. 274 The strategic planning\
+ , budgeting and control process\n  s. 277 The multiple functions of budget
+ s\n  s. 278 Conflicting roles of budgets\n  s. 279 The budget period\n  s.
+  280 Administration of the budgeting process\n  s. 281 Stages in the budge
+ ting process\n  s. 284 A detailed illustration\n  s. 292 Computerized budg
+ eting\n  s. 294 Activity-based budgeting\n  s. 296 Zero-based budgeting\n 
+  s. 298 Criticisms of budgeting\n  s. 303 Summary\n  s. 304 Key terms and 
+ concepts\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler
+  skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261112T200000
 DTEND;TZID=Europe/Oslo:20261112T201500
 TRANSP:OPAQUE
@@ -2110,23 +2056,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T051500
 DTEND;TZID=Europe/Oslo:20261113T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261113-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261113-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T053500
 DTEND;TZID=Europe/Oslo:20261113T061500
 TRANSP:OPAQUE
@@ -2135,7 +2074,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T061500
 DTEND;TZID=Europe/Oslo:20261113T070000
 TRANSP:OPAQUE
@@ -2144,21 +2083,22 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T070000
 DTEND;TZID=Europe/Oslo:20261113T084500
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 12.7–12.8
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n12.7 
- The Transpose\n12.8 Gaussian Elimination\n\nLes teorien\, regn eksemplene 
- og gjør oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10
- )\; for anvendelser trenger du bare se hvordan verktøyet settes opp. Seks
- jonstitler fra Pearsons innholdsfortegnelse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 12.5 (forts.)\, 12.6–12.7
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n12.5 
+ Matrix Multiplication – fortsett der du slapp\n12.6 Rules for Matrix Mul
+ tiplication\n12.7 The Transpose\n\nLes teorien\, regn eksemplene og gjør 
+ oppgavene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for a
+ nvendelser trenger du bare se hvordan verktøyet settes opp. Seksjonstitle
+ r fra Pearsons innholdsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-0845-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T084500
 DTEND;TZID=Europe/Oslo:20261113T091500
 TRANSP:OPAQUE
@@ -2168,7 +2108,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-0915-SOC1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T091500
 DTEND;TZID=Europe/Oslo:20261113T113000
 TRANSP:OPAQUE
@@ -2184,7 +2124,7 @@ CATEGORIES:SOC1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T113000
 DTEND;TZID=Europe/Oslo:20261113T133000
 TRANSP:OPAQUE
@@ -2196,7 +2136,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-1330-SOC1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T133000
 DTEND;TZID=Europe/Oslo:20261113T160000
 TRANSP:OPAQUE
@@ -2212,7 +2152,7 @@ CATEGORIES:SOC1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-1600-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T160000
 DTEND;TZID=Europe/Oslo:20261113T163000
 TRANSP:OPAQUE
@@ -2222,21 +2162,22 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-1630-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T163000
 DTEND;TZID=Europe/Oslo:20261113T180000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 42 (forts.)
-DESCRIPTION:Uke 42: Plotting – fortsett der du slapp\n\nGå gjennom noteb
- ooken og gjør øvingsarket for uka. Materiale (Jupyter-notebooks\, skript
- \, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og g
- ithub.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger und
- er Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 43 (forts.)
+DESCRIPTION:Uke 43: Grouping and aggregation (pandas) – fortsett der du s
+ lapp\n\nGå gjennom notebooken og gjør øvingsarket for uka. Fram til BUD
+ 1-eksamen: bare NumPy\, pandas og matplotlib. Materiale (Jupyter-notebooks
+ \, skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34
+ –39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke
+  ligger under Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261113T200000
 DTEND;TZID=Europe/Oslo:20261113T201500
 TRANSP:OPAQUE
@@ -2246,7 +2187,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261114T080000
 DTEND;TZID=Europe/Oslo:20261114T091500
 TRANSP:OPAQUE
@@ -2255,7 +2196,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114-1000-SOC1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261114T100000
 DTEND;TZID=Europe/Oslo:20261114T130000
 TRANSP:OPAQUE
@@ -2271,7 +2212,7 @@ CATEGORIES:SOC1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114-1300-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261114T130000
 DTEND;TZID=Europe/Oslo:20261114T133000
 TRANSP:OPAQUE
@@ -2281,7 +2222,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114-1330-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261114T133000
 DTEND;TZID=Europe/Oslo:20261114T160000
 TRANSP:OPAQUE
@@ -2292,7 +2233,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261114T200000
 DTEND;TZID=Europe/Oslo:20261114T201500
 TRANSP:OPAQUE
@@ -2302,7 +2243,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261115T080000
 DTEND;TZID=Europe/Oslo:20261115T091500
 TRANSP:OPAQUE
@@ -2311,7 +2252,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115-1000-SOC1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261115T100000
 DTEND;TZID=Europe/Oslo:20261115T130000
 TRANSP:OPAQUE
@@ -2328,7 +2269,7 @@ CATEGORIES:SOC1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115-1300-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261115T130000
 DTEND;TZID=Europe/Oslo:20261115T133000
 TRANSP:OPAQUE
@@ -2338,7 +2279,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115-1330-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261115T133000
 DTEND;TZID=Europe/Oslo:20261115T160000
 TRANSP:OPAQUE
@@ -2349,7 +2290,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115-1630-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261115T163000
 DTEND;TZID=Europe/Oslo:20261115T173000
 TRANSP:OPAQUE
@@ -2358,7 +2299,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261115T200000
 DTEND;TZID=Europe/Oslo:20261115T201500
 TRANSP:OPAQUE
@@ -2368,7 +2309,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261116-heldag-EXAM-579bf0e8@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 TRANSP:TRANSPARENT
@@ -2382,34 +2323,40 @@ DESCRIPTION:Individuell muntlig eksamen\, 30 min\, bestått/ikke bestått.
 CATEGORIES:EXAM
 END:VEVENT
 BEGIN:VEVENT
-UID:20261116-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261116-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261116T200000
-DTEND;TZID=Europe/Oslo:20261116T201500
+DTEND;TZID=Europe/Oslo:20261116T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 10\, s. 306–310 + kap. 12\, s.
+  347–369 + kap. 14\, s. 395–401
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 348 Divisional organizational structures\ns. 350 Advantages and disadvanta
+ ges of divisionalization\ns. 350 Prerequisites for successful divisionaliz
+ ation\ns. 351 Distinguishing between the managerial and economic performan
+ ce of the division\ns. 352 Alternative divisional profit measures\ns. 353 
+ Surveys of practice\ns. 355 Return on investment\ns. 356 Residual income\n
+ s. 357 Economic value added (EVA)\ns. 359 Addressing the dysfunctional con
+ sequences of short-term financial performance measures\ns. 363 Summary\ns.
+  364 Key terms and concepts\ns. 396 The performance management framework\n
+ s. 398 Strategy and strategic positioning\ns. 400 Performance measurement 
+ and performance management systems\ns. 401 Alternative performance managem
+ ent frameworks
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T051500
 DTEND;TZID=Europe/Oslo:20261117T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261117-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261117-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T053500
 DTEND;TZID=Europe/Oslo:20261117T061500
 TRANSP:OPAQUE
@@ -2418,7 +2365,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T061500
 DTEND;TZID=Europe/Oslo:20261117T070000
 TRANSP:OPAQUE
@@ -2427,23 +2374,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T070000
 DTEND;TZID=Europe/Oslo:20261117T113000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 12.8 (forts.)\, 12.9\, 13.1–13.2
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n12.8 
- Gaussian Elimination – fortsett der du slapp\n12.9 Geometric Interpretat
- ion of Vectors\n13.1 Determinants of Order 2\n13.2 Determinants of Order 3
- \n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 cou
- rse outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se h
- vordan verktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegne
- lse (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 12.7 (forts.)\, 12.8–12.9\, 13.1
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n12.7 
+ The Transpose – fortsett der du slapp\n12.8 Gaussian Elimination\n12.9 G
+ eometric Interpretation of Vectors\n13.1 Determinants of Order 2\n\nLes te
+ orien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outlin
+ e (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan ver
+ ktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. ut
+ g.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T113000
 DTEND;TZID=Europe/Oslo:20261117T133000
 TRANSP:OPAQUE
@@ -2455,22 +2402,24 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T133000
 DTEND;TZID=Europe/Oslo:20261117T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 43: Grouping and aggregation + uke 44
- : Concatenating and merging
-DESCRIPTION:Uke 43: Grouping and aggregation\nUke 44: Concatenating and mer
- ging\n\nGå gjennom notebooken og gjør øvingsarket for uka. Materiale (J
- upyter-notebooks\, skript\, øvingsark\, slides): github.com/isabelhovdahl
- /TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). 
- Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 43 (forts.) + uke 44: Concatenating a
+ nd merging (pandas)
+DESCRIPTION:Uke 43: Grouping and aggregation (pandas) – fortsett der du s
+ lapp\nUke 44: Concatenating and merging (pandas)\n\nGå gjennom notebooken
+  og gjør øvingsarket for uka. Fram til BUD1-eksamen: bare NumPy\, pandas
+  og matplotlib. Materiale (Jupyter-notebooks\, skript\, øvingsark\, slide
+ s): github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfolt
+ yn/TECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canvas
+ .
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T170000
 DTEND;TZID=Europe/Oslo:20261117T173000
 TRANSP:OPAQUE
@@ -2480,53 +2429,61 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T173000
 DTEND;TZID=Europe/Oslo:20261117T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 12\, s. 363–369 + kap. 14\, s. 395
- –413
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 12 D
- ivisional financial performance measures:\n  s. 363 Summary\n  s. 364 Key 
- terms and concepts\n  s. 365 Assessment material\nKap. 14 Strategic perfor
- mance management:\n  s. 395 (kapittelstart)\n  s. 396 The performance mana
- gement framework\n  s. 398 Strategy and strategic positioning\n  s. 400 Pe
- rformance measurement and performance management systems\n  s. 401 Alterna
- tive performance management frameworks\n  s. 402 The balanced scorecard\n 
-  s. 412 Linking performance evaluation with the balanced scorecard\n\nPens
- um: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjen
- nomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 10\, s. 306–310 + kap. 12\, s. 347
+ –369 + kap. 14\, s. 395–401
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 10 The budg
+ eting process:\n  s. 306 Assessment material\nKap. 12 Divisional financial
+  performance measures:\n  s. 347 (kapittelstart)\n  s. 348 Divisional orga
+ nizational structures\n  s. 350 Advantages and disadvantages of divisional
+ ization\n  s. 350 Prerequisites for successful divisionalization\n  s. 351
+  Distinguishing between the managerial and economic performance of the div
+ ision\n  s. 352 Alternative divisional profit measures\n  s. 353 Surveys o
+ f practice\n  s. 355 Return on investment\n  s. 356 Residual income\n  s. 
+ 357 Economic value added (EVA)\n  s. 359 Addressing the dysfunctional cons
+ equences of short-term financial performance measures\n  s. 363 Summary\n 
+  s. 364 Key terms and concepts\n  s. 365 Assessment material\nKap. 14 Stra
+ tegic performance management:\n  s. 395 (kapittelstart)\n  s. 396 The perf
+ ormance management framework\n  s. 398 Strategy and strategic positioning\
+ n  s. 400 Performance measurement and performance management systems\n  s.
+  401 Alternative performance management frameworks\n\nPensum: kap. 1–10\
+ , 12 og 14–16 (BUD1-plan). Alle kapitler skal være gjennomgått innen 2
+ 2.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261117-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261117-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261117T200000
-DTEND;TZID=Europe/Oslo:20261117T201500
+DTEND;TZID=Europe/Oslo:20261117T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 14\, s. 402–428 + kap. 15\, s.
+  429–435
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 402 The balanced scorecard\ns. 412 Linking performance evaluation with the
+  balanced scorecard\ns. 414 Benefits and limitations of the balanced score
+ card approach\ns. 420 Summary\ns. 422 Key terms and concepts\ns. 432 Cost 
+ management and the value chain\ns. 435 Life cycle cost management
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T051500
 DTEND;TZID=Europe/Oslo:20261118T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261118-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261118-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T053500
 DTEND;TZID=Europe/Oslo:20261118T061500
 TRANSP:OPAQUE
@@ -2535,7 +2492,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T061500
 DTEND;TZID=Europe/Oslo:20261118T070000
 TRANSP:OPAQUE
@@ -2544,15 +2501,15 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T070000
 DTEND;TZID=Europe/Oslo:20261118T113000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 13.2 (forts.)\, 13.3–13.6
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n13.2 
- Determinants of Order 3 – fortsett der du slapp\n13.3 Determinants in Ge
- neral\n13.4 Basic Rules for Determinants\n13.5 Expansion by Cofactors\n13.
- 6 The Inverse of a Matrix\n\nLes teorien\, regn eksemplene og gjør oppgav
+SUMMARY:Grinde på SAL: TECH1 – 13.1 (forts.)\, 13.2–13.5
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n13.1 
+ Determinants of Order 2 – fortsett der du slapp\n13.2 Determinants of Or
+ der 3\n13.3 Determinants in General\n13.4 Basic Rules for Determinants\n13
+ .5 Expansion by Cofactors\n\nLes teorien\, regn eksemplene og gjør oppgav
  ene. Pensum fra TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvende
  lser trenger du bare se hvordan verktøyet settes opp. Seksjonstitler fra 
  Pearsons innholdsfortegnelse (6. utg.).
@@ -2560,7 +2517,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T113000
 DTEND;TZID=Europe/Oslo:20261118T133000
 TRANSP:OPAQUE
@@ -2572,21 +2529,22 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T133000
 DTEND;TZID=Europe/Oslo:20261118T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – uke 44 (forts.) + uke 45: AI week
-DESCRIPTION:Uke 44: Concatenating and merging – fortsett der du slapp\nUk
- e 45: AI week\n\nGå gjennom notebooken og gjør øvingsarket for uka. Mat
- eriale (Jupyter-notebooks\, skript\, øvingsark\, slides): github.com/isab
- elhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uke 4
- 0–45). Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 44 (forts.)
+DESCRIPTION:Uke 44: Concatenating and merging (pandas) – fortsett der du 
+ slapp\n\nGå gjennom notebooken og gjør øvingsarket for uka. Fram til BU
+ D1-eksamen: bare NumPy\, pandas og matplotlib. Materiale (Jupyter-notebook
+ s\, skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34
+ –39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke
+  ligger under Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T170000
 DTEND;TZID=Europe/Oslo:20261118T173000
 TRANSP:OPAQUE
@@ -2596,51 +2554,51 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T173000
 DTEND;TZID=Europe/Oslo:20261118T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 14\, s. 414–428 + kap. 15\, s. 429
- –447
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 14 S
- trategic performance management:\n  s. 414 Benefits and limitations of the
-  balanced scorecard approach\n  s. 420 Summary\n  s. 422 Key terms and con
- cepts\n  s. 423 Assessment material\nKap. 15 Strategic cost management and
-  value creation:\n  s. 429 (kapittelstart)\n  s. 432 Cost management and t
- he value chain\n  s. 435 Life cycle cost management\n  s. 436 Target costi
- ng\n  s. 443 Activity-based management\n\nPensum: kap. 1–10\, 12 og 14
- –16 (BUD1-plan). Alle kapitler skal være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 14\, s. 402–428 + kap. 15\, s. 429
+ –435
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 14 Strategi
+ c performance management:\n  s. 402 The balanced scorecard\n  s. 412 Linki
+ ng performance evaluation with the balanced scorecard\n  s. 414 Benefits a
+ nd limitations of the balanced scorecard approach\n  s. 420 Summary\n  s. 
+ 422 Key terms and concepts\n  s. 423 Assessment material\nKap. 15 Strategi
+ c cost management and value creation:\n  s. 429 (kapittelstart)\n  s. 432 
+ Cost management and the value chain\n  s. 435 Life cycle cost management\n
+ \nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitler skal vær
+ e gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261118-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261118-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261118T200000
-DTEND;TZID=Europe/Oslo:20261118T201500
+DTEND;TZID=Europe/Oslo:20261118T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 15\, s. 436–473
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 436 Target costing\ns. 443 Activity-based management\ns. 448 Benchmarking\
+ ns. 449 Business process reengineering\ns. 450 Just-in-time systems\ns. 45
+ 6 Quality cost management\ns. 464 Summary\ns. 466 Key terms and concepts
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T051500
 DTEND;TZID=Europe/Oslo:20261119T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261119-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261119-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T053500
 DTEND;TZID=Europe/Oslo:20261119T061500
 TRANSP:OPAQUE
@@ -2649,7 +2607,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T061500
 DTEND;TZID=Europe/Oslo:20261119T070000
 TRANSP:OPAQUE
@@ -2658,23 +2616,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T070000
 DTEND;TZID=Europe/Oslo:20261119T110000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 13.6 (forts.)\, 13.7–13.9
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n13.6 
- The Inverse of a Matrix – fortsett der du slapp\n13.7 A General Formula 
- for the Inverse\n13.8 Cramer's Rule\n13.9 The Leontief Model (anvendelse)\
- n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 cour
- se outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hv
- ordan verktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnel
- se (6. utg.).
+SUMMARY:Grinde på SAL: TECH1 – 13.5 (forts.)\, 13.6–13.8
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n13.5 
+ Expansion by Cofactors – fortsett der du slapp\n13.6 The Inverse of a Ma
+ trix\n13.7 A General Formula for the Inverse\n13.8 Cramer's Rule\n\nLes te
+ orien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outlin
+ e (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan ver
+ ktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. ut
+ g.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-1100-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T110000
 DTEND;TZID=Europe/Oslo:20261119T130000
 TRANSP:OPAQUE
@@ -2686,22 +2644,24 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-1300-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T130000
 DTEND;TZID=Europe/Oslo:20261119T170000
 TRANSP:OPAQUE
 SUMMARY:Grinde på SAL: TECH2 – repetisjon og øving før hjemmeeksamen
 DESCRIPTION:Hjemmeeksamen 23.–25.11 (3 dager\, grupper på 2–3\, 30 %).
-  Gå gjennom uke 34–45 og gjør øvingsarkene på nytt der du er usikker
- . Info om hjemmeeksamen kommer på Canvas. Materiale (Jupyter-notebooks\, 
- skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39
- ) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligg
- er under Modules på Canvas.
+  Gå gjennom NumPy\, pandas og matplotlib (uke 40–44) og gjør øvingsar
+ kene på nytt der du er usikker. Grunnleggende Python (uke 34–39) tar du
+  etter BUD1-eksamen – trenger hjemmeeksamen det\, bruk disse dagene. Inf
+ o om hjemmeeksamen kommer på Canvas. Materiale (Jupyter-notebooks\, skrip
+ t\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og 
+ github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger un
+ der Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-1700-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T170000
 DTEND;TZID=Europe/Oslo:20261119T173000
 TRANSP:OPAQUE
@@ -2711,48 +2671,48 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-1730-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T173000
 DTEND;TZID=Europe/Oslo:20261119T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: BUD1 – kap. 15\, s. 448–473
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 15 S
- trategic cost management and value creation:\n  s. 448 Benchmarking\n  s. 
- 449 Business process reengineering\n  s. 450 Just-in-time systems\n  s. 45
- 6 Quality cost management\n  s. 464 Summary\n  s. 466 Key terms and concep
- ts\n  s. 468 Assessment material\n\nPensum: kap. 1–10\, 12 og 14–16 (B
- UD1-plan). Alle kapitler skal være gjennomgått innen 22.11.
+SUMMARY:Grinde på SAL: BUD1 – kap. 15\, s. 436–473
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 15 Strategi
+ c cost management and value creation:\n  s. 436 Target costing\n  s. 443 A
+ ctivity-based management\n  s. 448 Benchmarking\n  s. 449 Business process
+  reengineering\n  s. 450 Just-in-time systems\n  s. 456 Quality cost manag
+ ement\n  s. 464 Summary\n  s. 466 Key terms and concepts\n  s. 468 Assessm
+ ent material\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapi
+ tler skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
-UID:20261119-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+UID:20261119-2000-BUD1READ@grindeplan-h26
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261119T200000
-DTEND;TZID=Europe/Oslo:20261119T201500
+DTEND;TZID=Europe/Oslo:20261119T210000
 TRANSP:OPAQUE
-SUMMARY:Leggetid
-DESCRIPTION:I seng kl. 20:00.
-CATEGORIES:ROUTINE
+SUMMARY:Leggetid + kveldslesing BUD1: kap. 16\, s. 474–497
+DESCRIPTION:I seng kl. 20:00\, lys av 21:00. Les sidene til morgendagens BU
+ D1-økt (hopp over Assessment material – oppgavene tar du på sal):\ns. 
+ 475 Information technology in management accounting: A brief history and c
+ ontext\ns. 484 Data analytics for management accountants\ns. 493 Summary\n
+ s. 494 Key terms and concepts
+CATEGORIES:BUD1READ
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-0515-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T051500
 DTEND;TZID=Europe/Oslo:20261120T053500
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261120-0515-ROUTINE-alarm
-X-WR-ALARMUID:20261120-0515-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-0535-RUN@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T053500
 DTEND;TZID=Europe/Oslo:20261120T061500
 TRANSP:OPAQUE
@@ -2761,7 +2721,7 @@ CATEGORIES:RUN
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-0615-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T061500
 DTEND;TZID=Europe/Oslo:20261120T070000
 TRANSP:OPAQUE
@@ -2770,23 +2730,23 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-0700-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T070000
 DTEND;TZID=Europe/Oslo:20261120T103000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH1 – 13.9 (forts.)\, 13.10–13.12
-DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n13.9 
- The Leontief Model (anvendelse) – fortsett der du slapp\n13.10 Eigenvalu
- es and Eigenvectors\n13.11 Diagonalization\n13.12 Quadratic Forms\n\nLes t
- eorien\, regn eksemplene og gjør oppgavene. Pensum fra TECH1 course outli
- ne (ikke 9.4\, ikke 12.10)\; for anvendelser trenger du bare se hvordan ve
- rktøyet settes opp. Seksjonstitler fra Pearsons innholdsfortegnelse (6. u
- tg.).
+SUMMARY:Grinde på SAL: TECH1 – 13.8 (forts.)\, 13.9–13.12
+DESCRIPTION:Sydsæter\, Essential Mathematics for Economic Analysis:\n13.8 
+ Cramer's Rule – fortsett der du slapp\n13.9 The Leontief Model (anvendel
+ se)\n13.10 Eigenvalues and Eigenvectors\n13.11 Diagonalization\n13.12 Quad
+ ratic Forms\n\nLes teorien\, regn eksemplene og gjør oppgavene. Pensum fr
+ a TECH1 course outline (ikke 9.4\, ikke 12.10)\; for anvendelser trenger d
+ u bare se hvordan verktøyet settes opp. Seksjonstitler fra Pearsons innho
+ ldsfortegnelse (6. utg.).
 CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-1030-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T103000
 DTEND;TZID=Europe/Oslo:20261120T123000
 TRANSP:OPAQUE
@@ -2798,22 +2758,24 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-1230-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T123000
 DTEND;TZID=Europe/Oslo:20261120T163000
 TRANSP:OPAQUE
 SUMMARY:Grinde på SAL: TECH2 – repetisjon og øving før hjemmeeksamen
 DESCRIPTION:Hjemmeeksamen 23.–25.11 (3 dager\, grupper på 2–3\, 30 %).
-  Gå gjennom uke 34–45 og gjør øvingsarkene på nytt der du er usikker
- . Info om hjemmeeksamen kommer på Canvas. Materiale (Jupyter-notebooks\, 
- skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39
- ) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligg
- er under Modules på Canvas.
+  Gå gjennom NumPy\, pandas og matplotlib (uke 40–44) og gjør øvingsar
+ kene på nytt der du er usikker. Grunnleggende Python (uke 34–39) tar du
+  etter BUD1-eksamen – trenger hjemmeeksamen det\, bruk disse dagene. Inf
+ o om hjemmeeksamen kommer på Canvas. Materiale (Jupyter-notebooks\, skrip
+ t\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og 
+ github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger un
+ der Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-1630-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T163000
 DTEND;TZID=Europe/Oslo:20261120T170000
 TRANSP:OPAQUE
@@ -2823,23 +2785,25 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-1700-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T170000
 DTEND;TZID=Europe/Oslo:20261120T180000
 TRANSP:OPAQUE
 SUMMARY:Grinde på SAL: BUD1 – kap. 16\, s. 474–497
-DESCRIPTION:Drury\, Management Accounting for Business (9. utg.)\nKap. 16 M
- anagement accounting: Contemporary technologies and data analytics:\n  s. 
- 474 (kapittelstart)\n  s. 475 Information technology in management account
- ing: A brief history and context\n  s. 484 Data analytics for management a
- ccountants\n  s. 493 Summary\n  s. 494 Key terms and concepts\n  s. 494 As
- sessment material\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle
-  kapitler skal være gjennomgått innen 22.11.
+DESCRIPTION:Sidene leste du på kveldslesingen i går. Bruk økta på det v
+ iktigste: nøkkelbegreper\, eksemplene og oppgavene (Assessment material).
+ \n\nDrury\, Management Accounting for Business (9. utg.)\nKap. 16 Manageme
+ nt accounting: Contemporary technologies and data analytics:\n  s. 474 (ka
+ pittelstart)\n  s. 475 Information technology in management accounting: A 
+ brief history and context\n  s. 484 Data analytics for management accounta
+ nts\n  s. 493 Summary\n  s. 494 Key terms and concepts\n  s. 494 Assessmen
+ t material\n\nPensum: kap. 1–10\, 12 og 14–16 (BUD1-plan). Alle kapitl
+ er skal være gjennomgått innen 22.11.
 CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261120T200000
 DTEND;TZID=Europe/Oslo:20261120T201500
 TRANSP:OPAQUE
@@ -2849,7 +2813,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261121T080000
 DTEND;TZID=Europe/Oslo:20261121T091500
 TRANSP:OPAQUE
@@ -2858,7 +2822,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121-1000-COM1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261121T100000
 DTEND;TZID=Europe/Oslo:20261121T140000
 TRANSP:OPAQUE
@@ -2871,7 +2835,7 @@ CATEGORIES:COM1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121-1400-COM1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261121T140000
 DTEND;TZID=Europe/Oslo:20261121T150000
 TRANSP:OPAQUE
@@ -2884,7 +2848,7 @@ CATEGORIES:COM1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121-1500-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261121T150000
 DTEND;TZID=Europe/Oslo:20261121T153000
 TRANSP:OPAQUE
@@ -2894,7 +2858,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121-1530-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261121T153000
 DTEND;TZID=Europe/Oslo:20261121T160000
 TRANSP:OPAQUE
@@ -2905,7 +2869,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261121T200000
 DTEND;TZID=Europe/Oslo:20261121T201500
 TRANSP:OPAQUE
@@ -2915,7 +2879,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-0800-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T080000
 DTEND;TZID=Europe/Oslo:20261122T091500
 TRANSP:OPAQUE
@@ -2924,7 +2888,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T100000
 DTEND;TZID=Europe/Oslo:20261122T110000
 TRANSP:OPAQUE
@@ -2938,7 +2902,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-1100-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T110000
 DTEND;TZID=Europe/Oslo:20261122T113000
 TRANSP:OPAQUE
@@ -2948,22 +2912,24 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-1130-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T113000
 DTEND;TZID=Europe/Oslo:20261122T123000
 TRANSP:OPAQUE
 SUMMARY:Grinde på SAL: TECH2 – repetisjon og øving før hjemmeeksamen
 DESCRIPTION:Hjemmeeksamen 23.–25.11 (3 dager\, grupper på 2–3\, 30 %).
-  Gå gjennom uke 34–45 og gjør øvingsarkene på nytt der du er usikker
- . Info om hjemmeeksamen kommer på Canvas. Materiale (Jupyter-notebooks\, 
- skript\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39
- ) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligg
- er under Modules på Canvas.
+  Gå gjennom NumPy\, pandas og matplotlib (uke 40–44) og gjør øvingsar
+ kene på nytt der du er usikker. Grunnleggende Python (uke 34–39) tar du
+  etter BUD1-eksamen – trenger hjemmeeksamen det\, bruk disse dagene. Inf
+ o om hjemmeeksamen kommer på Canvas. Materiale (Jupyter-notebooks\, skrip
+ t\, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og 
+ github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger un
+ der Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-1230-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T123000
 DTEND;TZID=Europe/Oslo:20261122T130000
 TRANSP:OPAQUE
@@ -2973,7 +2939,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-1300-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T130000
 DTEND;TZID=Europe/Oslo:20261122T160000
 TRANSP:OPAQUE
@@ -2984,7 +2950,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-1630-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T163000
 DTEND;TZID=Europe/Oslo:20261122T173000
 TRANSP:OPAQUE
@@ -2993,7 +2959,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261122T200000
 DTEND;TZID=Europe/Oslo:20261122T201500
 TRANSP:OPAQUE
@@ -3003,7 +2969,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123-heldag-MARK-10776509@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261126
 TRANSP:TRANSPARENT
@@ -3014,23 +2980,16 @@ CATEGORIES:MARK
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261123T050000
 DTEND;TZID=Europe/Oslo:20261123T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261123-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261123-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261123T052000
 DTEND;TZID=Europe/Oslo:20261123T060000
 TRANSP:OPAQUE
@@ -3039,7 +2998,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261123T060000
 DTEND;TZID=Europe/Oslo:20261123T113000
 TRANSP:OPAQUE
@@ -3050,7 +3009,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261123T113000
 DTEND;TZID=Europe/Oslo:20261123T133000
 TRANSP:OPAQUE
@@ -3062,7 +3021,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261123T133000
 DTEND;TZID=Europe/Oslo:20261123T190000
 TRANSP:OPAQUE
@@ -3073,7 +3032,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261123T200000
 DTEND;TZID=Europe/Oslo:20261123T201500
 TRANSP:OPAQUE
@@ -3083,23 +3042,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261124-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261124T050000
 DTEND;TZID=Europe/Oslo:20261124T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261124-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261124-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261124-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261124T052000
 DTEND;TZID=Europe/Oslo:20261124T060000
 TRANSP:OPAQUE
@@ -3108,7 +3060,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261124-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261124T060000
 DTEND;TZID=Europe/Oslo:20261124T113000
 TRANSP:OPAQUE
@@ -3119,7 +3071,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261124-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261124T113000
 DTEND;TZID=Europe/Oslo:20261124T133000
 TRANSP:OPAQUE
@@ -3131,7 +3083,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261124-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261124T133000
 DTEND;TZID=Europe/Oslo:20261124T190000
 TRANSP:OPAQUE
@@ -3142,7 +3094,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261124-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261124T200000
 DTEND;TZID=Europe/Oslo:20261124T201500
 TRANSP:OPAQUE
@@ -3152,23 +3104,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261125-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261125T050000
 DTEND;TZID=Europe/Oslo:20261125T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261125-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261125-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261125-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261125T052000
 DTEND;TZID=Europe/Oslo:20261125T060000
 TRANSP:OPAQUE
@@ -3177,7 +3122,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261125-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261125T060000
 DTEND;TZID=Europe/Oslo:20261125T113000
 TRANSP:OPAQUE
@@ -3188,7 +3133,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261125-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261125T113000
 DTEND;TZID=Europe/Oslo:20261125T133000
 TRANSP:OPAQUE
@@ -3200,7 +3145,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261125-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261125T133000
 DTEND;TZID=Europe/Oslo:20261125T190000
 TRANSP:OPAQUE
@@ -3211,7 +3156,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261125-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261125T200000
 DTEND;TZID=Europe/Oslo:20261125T201500
 TRANSP:OPAQUE
@@ -3221,23 +3166,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T050000
 DTEND;TZID=Europe/Oslo:20261126T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261126-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261126-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T052000
 DTEND;TZID=Europe/Oslo:20261126T060000
 TRANSP:OPAQUE
@@ -3246,7 +3184,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-0600-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T060000
 DTEND;TZID=Europe/Oslo:20261126T100000
 TRANSP:OPAQUE
@@ -3258,7 +3196,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T100000
 DTEND;TZID=Europe/Oslo:20261126T113000
 TRANSP:OPAQUE
@@ -3269,7 +3207,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T113000
 DTEND;TZID=Europe/Oslo:20261126T133000
 TRANSP:OPAQUE
@@ -3281,7 +3219,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-1330-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T133000
 DTEND;TZID=Europe/Oslo:20261126T190000
 TRANSP:OPAQUE
@@ -3292,7 +3230,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-1930-BUD1REV@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T193000
 DTEND;TZID=Europe/Oslo:20261126T200000
 TRANSP:OPAQUE
@@ -3303,7 +3241,7 @@ CATEGORIES:BUD1REV
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261126T200000
 DTEND;TZID=Europe/Oslo:20261126T201500
 TRANSP:OPAQUE
@@ -3313,7 +3251,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-heldag-MARK-c1d3bb1d@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 TRANSP:TRANSPARENT
@@ -3323,23 +3261,16 @@ CATEGORIES:MARK
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261127T050000
 DTEND;TZID=Europe/Oslo:20261127T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261127-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261127-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261127T052000
 DTEND;TZID=Europe/Oslo:20261127T060000
 TRANSP:OPAQUE
@@ -3348,7 +3279,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-0600-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261127T060000
 DTEND;TZID=Europe/Oslo:20261127T100000
 TRANSP:OPAQUE
@@ -3360,7 +3291,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261127T100000
 DTEND;TZID=Europe/Oslo:20261127T120000
 TRANSP:OPAQUE
@@ -3371,7 +3302,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-1200-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261127T120000
 DTEND;TZID=Europe/Oslo:20261127T173000
 TRANSP:OPAQUE
@@ -3382,7 +3313,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-1930-BUD1REV@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261127T193000
 DTEND;TZID=Europe/Oslo:20261127T200000
 TRANSP:OPAQUE
@@ -3393,7 +3324,7 @@ CATEGORIES:BUD1REV
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261127T200000
 DTEND;TZID=Europe/Oslo:20261127T201500
 TRANSP:OPAQUE
@@ -3403,23 +3334,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261128T050000
 DTEND;TZID=Europe/Oslo:20261128T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261128-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261128-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261128T052000
 DTEND;TZID=Europe/Oslo:20261128T060000
 TRANSP:OPAQUE
@@ -3428,7 +3352,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128-0600-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261128T060000
 DTEND;TZID=Europe/Oslo:20261128T100000
 TRANSP:OPAQUE
@@ -3440,7 +3364,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261128T100000
 DTEND;TZID=Europe/Oslo:20261128T120000
 TRANSP:OPAQUE
@@ -3451,7 +3375,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128-1200-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261128T120000
 DTEND;TZID=Europe/Oslo:20261128T170000
 TRANSP:OPAQUE
@@ -3462,7 +3386,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128-1930-BUD1REV@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261128T193000
 DTEND;TZID=Europe/Oslo:20261128T200000
 TRANSP:OPAQUE
@@ -3473,7 +3397,7 @@ CATEGORIES:BUD1REV
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261128T200000
 DTEND;TZID=Europe/Oslo:20261128T201500
 TRANSP:OPAQUE
@@ -3483,23 +3407,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T050000
 DTEND;TZID=Europe/Oslo:20261129T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261129-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261129-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T052000
 DTEND;TZID=Europe/Oslo:20261129T060000
 TRANSP:OPAQUE
@@ -3508,7 +3425,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-0600-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T060000
 DTEND;TZID=Europe/Oslo:20261129T100000
 TRANSP:OPAQUE
@@ -3520,7 +3437,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T100000
 DTEND;TZID=Europe/Oslo:20261129T120000
 TRANSP:OPAQUE
@@ -3531,7 +3448,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-1200-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T120000
 DTEND;TZID=Europe/Oslo:20261129T170000
 TRANSP:OPAQUE
@@ -3542,7 +3459,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-1730-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T173000
 DTEND;TZID=Europe/Oslo:20261129T183000
 TRANSP:OPAQUE
@@ -3551,7 +3468,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-1930-BUD1REV@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T193000
 DTEND;TZID=Europe/Oslo:20261129T200000
 TRANSP:OPAQUE
@@ -3562,7 +3479,7 @@ CATEGORIES:BUD1REV
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261129T200000
 DTEND;TZID=Europe/Oslo:20261129T201500
 TRANSP:OPAQUE
@@ -3572,23 +3489,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T050000
 DTEND;TZID=Europe/Oslo:20261130T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261130-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261130-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T052000
 DTEND;TZID=Europe/Oslo:20261130T060000
 TRANSP:OPAQUE
@@ -3597,7 +3507,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-0600-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T060000
 DTEND;TZID=Europe/Oslo:20261130T100000
 TRANSP:OPAQUE
@@ -3609,7 +3519,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-1000-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T100000
 DTEND;TZID=Europe/Oslo:20261130T113000
 TRANSP:OPAQUE
@@ -3620,7 +3530,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T113000
 DTEND;TZID=Europe/Oslo:20261130T133000
 TRANSP:OPAQUE
@@ -3632,7 +3542,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-1330-TECH1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T133000
 DTEND;TZID=Europe/Oslo:20261130T190000
 TRANSP:OPAQUE
@@ -3643,7 +3553,7 @@ CATEGORIES:TECH1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-1930-BUD1REV@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T193000
 DTEND;TZID=Europe/Oslo:20261130T200000
 TRANSP:OPAQUE
@@ -3654,7 +3564,7 @@ CATEGORIES:BUD1REV
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261130T200000
 DTEND;TZID=Europe/Oslo:20261130T201500
 TRANSP:OPAQUE
@@ -3664,7 +3574,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261201-heldag-EXAM-5d1e08d4@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 TRANSP:TRANSPARENT
@@ -3676,7 +3586,7 @@ CATEGORIES:EXAM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261201-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261201T200000
 DTEND;TZID=Europe/Oslo:20261201T201500
 TRANSP:OPAQUE
@@ -3686,23 +3596,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T050000
 DTEND;TZID=Europe/Oslo:20261202T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261202-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261202-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T052000
 DTEND;TZID=Europe/Oslo:20261202T060000
 TRANSP:OPAQUE
@@ -3711,7 +3614,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-0600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T060000
 DTEND;TZID=Europe/Oslo:20261202T090000
 TRANSP:OPAQUE
@@ -3723,7 +3626,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-0900-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T090000
 DTEND;TZID=Europe/Oslo:20261202T110000
 TRANSP:OPAQUE
@@ -3734,7 +3637,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-1100-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T110000
 DTEND;TZID=Europe/Oslo:20261202T113000
 TRANSP:OPAQUE
@@ -3745,7 +3648,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T113000
 DTEND;TZID=Europe/Oslo:20261202T133000
 TRANSP:OPAQUE
@@ -3757,7 +3660,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-1330-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T133000
 DTEND;TZID=Europe/Oslo:20261202T150000
 TRANSP:OPAQUE
@@ -3768,7 +3671,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-1500-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T150000
 DTEND;TZID=Europe/Oslo:20261202T153000
 TRANSP:OPAQUE
@@ -3778,7 +3681,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-1530-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T153000
 DTEND;TZID=Europe/Oslo:20261202T190000
 TRANSP:OPAQUE
@@ -3789,7 +3692,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261202-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261202T200000
 DTEND;TZID=Europe/Oslo:20261202T201500
 TRANSP:OPAQUE
@@ -3799,23 +3702,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T050000
 DTEND;TZID=Europe/Oslo:20261203T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261203-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261203-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T052000
 DTEND;TZID=Europe/Oslo:20261203T060000
 TRANSP:OPAQUE
@@ -3824,7 +3720,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-0600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T060000
 DTEND;TZID=Europe/Oslo:20261203T090000
 TRANSP:OPAQUE
@@ -3836,7 +3732,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-0900-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T090000
 DTEND;TZID=Europe/Oslo:20261203T110000
 TRANSP:OPAQUE
@@ -3847,7 +3743,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-1100-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T110000
 DTEND;TZID=Europe/Oslo:20261203T113000
 TRANSP:OPAQUE
@@ -3858,7 +3754,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T113000
 DTEND;TZID=Europe/Oslo:20261203T133000
 TRANSP:OPAQUE
@@ -3870,7 +3766,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-1330-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T133000
 DTEND;TZID=Europe/Oslo:20261203T150000
 TRANSP:OPAQUE
@@ -3881,7 +3777,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-1500-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T150000
 DTEND;TZID=Europe/Oslo:20261203T153000
 TRANSP:OPAQUE
@@ -3891,7 +3787,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-1530-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T153000
 DTEND;TZID=Europe/Oslo:20261203T190000
 TRANSP:OPAQUE
@@ -3902,7 +3798,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261203-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261203T200000
 DTEND;TZID=Europe/Oslo:20261203T201500
 TRANSP:OPAQUE
@@ -3912,23 +3808,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T050000
 DTEND;TZID=Europe/Oslo:20261204T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261204-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261204-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T052000
 DTEND;TZID=Europe/Oslo:20261204T060000
 TRANSP:OPAQUE
@@ -3937,7 +3826,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-0600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T060000
 DTEND;TZID=Europe/Oslo:20261204T090000
 TRANSP:OPAQUE
@@ -3949,7 +3838,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-0900-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T090000
 DTEND;TZID=Europe/Oslo:20261204T110000
 TRANSP:OPAQUE
@@ -3960,7 +3849,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-1100-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T110000
 DTEND;TZID=Europe/Oslo:20261204T113000
 TRANSP:OPAQUE
@@ -3971,7 +3860,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T113000
 DTEND;TZID=Europe/Oslo:20261204T133000
 TRANSP:OPAQUE
@@ -3983,7 +3872,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-1330-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T133000
 DTEND;TZID=Europe/Oslo:20261204T150000
 TRANSP:OPAQUE
@@ -3994,7 +3883,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-1500-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T150000
 DTEND;TZID=Europe/Oslo:20261204T153000
 TRANSP:OPAQUE
@@ -4004,7 +3893,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-1530-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T153000
 DTEND;TZID=Europe/Oslo:20261204T173000
 TRANSP:OPAQUE
@@ -4015,7 +3904,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261204-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261204T200000
 DTEND;TZID=Europe/Oslo:20261204T201500
 TRANSP:OPAQUE
@@ -4025,23 +3914,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T050000
 DTEND;TZID=Europe/Oslo:20261205T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261205-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261205-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T052000
 DTEND;TZID=Europe/Oslo:20261205T060000
 TRANSP:OPAQUE
@@ -4050,7 +3932,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-0600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T060000
 DTEND;TZID=Europe/Oslo:20261205T090000
 TRANSP:OPAQUE
@@ -4062,7 +3944,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-0900-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T090000
 DTEND;TZID=Europe/Oslo:20261205T110000
 TRANSP:OPAQUE
@@ -4073,7 +3955,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-1100-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T110000
 DTEND;TZID=Europe/Oslo:20261205T130000
 TRANSP:OPAQUE
@@ -4084,7 +3966,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-1300-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T130000
 DTEND;TZID=Europe/Oslo:20261205T133000
 TRANSP:OPAQUE
@@ -4094,7 +3976,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-1330-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T133000
 DTEND;TZID=Europe/Oslo:20261205T170000
 TRANSP:OPAQUE
@@ -4105,7 +3987,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261205-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261205T200000
 DTEND;TZID=Europe/Oslo:20261205T201500
 TRANSP:OPAQUE
@@ -4115,23 +3997,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T050000
 DTEND;TZID=Europe/Oslo:20261206T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261206-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261206-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T052000
 DTEND;TZID=Europe/Oslo:20261206T060000
 TRANSP:OPAQUE
@@ -4140,7 +4015,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-0600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T060000
 DTEND;TZID=Europe/Oslo:20261206T090000
 TRANSP:OPAQUE
@@ -4152,7 +4027,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-0900-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T090000
 DTEND;TZID=Europe/Oslo:20261206T110000
 TRANSP:OPAQUE
@@ -4163,7 +4038,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-1100-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T110000
 DTEND;TZID=Europe/Oslo:20261206T130000
 TRANSP:OPAQUE
@@ -4174,7 +4049,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-1300-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T130000
 DTEND;TZID=Europe/Oslo:20261206T133000
 TRANSP:OPAQUE
@@ -4184,7 +4059,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-1330-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T133000
 DTEND;TZID=Europe/Oslo:20261206T170000
 TRANSP:OPAQUE
@@ -4195,7 +4070,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-1730-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T173000
 DTEND;TZID=Europe/Oslo:20261206T183000
 TRANSP:OPAQUE
@@ -4204,7 +4079,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261206-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261206T200000
 DTEND;TZID=Europe/Oslo:20261206T201500
 TRANSP:OPAQUE
@@ -4214,23 +4089,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T050000
 DTEND;TZID=Europe/Oslo:20261207T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261207-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261207-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T052000
 DTEND;TZID=Europe/Oslo:20261207T060000
 TRANSP:OPAQUE
@@ -4239,7 +4107,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-0600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T060000
 DTEND;TZID=Europe/Oslo:20261207T090000
 TRANSP:OPAQUE
@@ -4251,7 +4119,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-0900-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T090000
 DTEND;TZID=Europe/Oslo:20261207T110000
 TRANSP:OPAQUE
@@ -4262,7 +4130,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-1100-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T110000
 DTEND;TZID=Europe/Oslo:20261207T113000
 TRANSP:OPAQUE
@@ -4273,7 +4141,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T113000
 DTEND;TZID=Europe/Oslo:20261207T133000
 TRANSP:OPAQUE
@@ -4285,7 +4153,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-1330-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T133000
 DTEND;TZID=Europe/Oslo:20261207T150000
 TRANSP:OPAQUE
@@ -4296,7 +4164,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-1500-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T150000
 DTEND;TZID=Europe/Oslo:20261207T153000
 TRANSP:OPAQUE
@@ -4306,7 +4174,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-1530-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T153000
 DTEND;TZID=Europe/Oslo:20261207T190000
 TRANSP:OPAQUE
@@ -4317,7 +4185,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261207-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261207T200000
 DTEND;TZID=Europe/Oslo:20261207T201500
 TRANSP:OPAQUE
@@ -4327,23 +4195,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T050000
 DTEND;TZID=Europe/Oslo:20261208T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261208-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261208-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T052000
 DTEND;TZID=Europe/Oslo:20261208T060000
 TRANSP:OPAQUE
@@ -4352,7 +4213,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-0600-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T060000
 DTEND;TZID=Europe/Oslo:20261208T090000
 TRANSP:OPAQUE
@@ -4364,7 +4225,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-0900-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T090000
 DTEND;TZID=Europe/Oslo:20261208T110000
 TRANSP:OPAQUE
@@ -4375,7 +4236,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-1100-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T110000
 DTEND;TZID=Europe/Oslo:20261208T113000
 TRANSP:OPAQUE
@@ -4386,7 +4247,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T113000
 DTEND;TZID=Europe/Oslo:20261208T133000
 TRANSP:OPAQUE
@@ -4398,7 +4259,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-1330-BUD1@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T133000
 DTEND;TZID=Europe/Oslo:20261208T150000
 TRANSP:OPAQUE
@@ -4409,7 +4270,7 @@ CATEGORIES:BUD1
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-1500-PAUSE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T150000
 DTEND;TZID=Europe/Oslo:20261208T153000
 TRANSP:OPAQUE
@@ -4419,7 +4280,7 @@ CATEGORIES:PAUSE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-1530-CATCHUP@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T153000
 DTEND;TZID=Europe/Oslo:20261208T190000
 TRANSP:OPAQUE
@@ -4430,7 +4291,7 @@ CATEGORIES:CATCHUP
 END:VEVENT
 BEGIN:VEVENT
 UID:20261208-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261208T200000
 DTEND;TZID=Europe/Oslo:20261208T201500
 TRANSP:OPAQUE
@@ -4440,7 +4301,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261209-0900-EXAM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261209T090000
 DTEND;TZID=Europe/Oslo:20261209T120000
 TRANSP:OPAQUE
@@ -4451,7 +4312,7 @@ CATEGORIES:EXAM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261209-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261209T200000
 DTEND;TZID=Europe/Oslo:20261209T201500
 TRANSP:OPAQUE
@@ -4461,23 +4322,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261210-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261210T050000
 DTEND;TZID=Europe/Oslo:20261210T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261210-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261210-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261210-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261210T052000
 DTEND;TZID=Europe/Oslo:20261210T060000
 TRANSP:OPAQUE
@@ -4486,20 +4340,21 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261210-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261210T060000
 DTEND;TZID=Europe/Oslo:20261210T113000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – repetisjon uke 34–39
-DESCRIPTION:uke 34–39: Python basics\, git\, decisions\, loops\, function
- s\, packages. Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides)
- : github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn
- /TECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – lær uke 34–36
+DESCRIPTION:Course intro & Getting started with VS Code\; Python basics & V
+ ersion control with git\; Decisions. Materiale (Jupyter-notebooks\, skript
+ \, øvingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og g
+ ithub.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger und
+ er Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261210-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261210T113000
 DTEND;TZID=Europe/Oslo:20261210T133000
 TRANSP:OPAQUE
@@ -4511,11 +4366,11 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261210-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261210T133000
 DTEND;TZID=Europe/Oslo:20261210T190000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – øvinger uke 34–39
+SUMMARY:Grinde på SAL: TECH2 – øvinger uke 34–36
 DESCRIPTION:Gjør øvingsarkene på nytt uten å se på løsningen først. 
  Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): github.com/i
  sabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uk
@@ -4524,7 +4379,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261210-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261210T200000
 DTEND;TZID=Europe/Oslo:20261210T201500
 TRANSP:OPAQUE
@@ -4534,23 +4389,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261211-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261211T050000
 DTEND;TZID=Europe/Oslo:20261211T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261211-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261211-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261211-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261211T052000
 DTEND;TZID=Europe/Oslo:20261211T060000
 TRANSP:OPAQUE
@@ -4559,24 +4407,25 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261211-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261211T060000
 DTEND;TZID=Europe/Oslo:20261211T120000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – repetisjon uke 40–42
-DESCRIPTION:uke 40–42: git/VS Code & NumPy\, intro to pandas\, plotting. 
- Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): github.com/i
- sabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uk
- e 40–45). Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – lær uke 37–39 + git/VS Code
+DESCRIPTION:Loops\; Functions\; Python packages & Virtual environments\; Mo
+ re on git and VS Code (uke 40). Materiale (Jupyter-notebooks\, skript\, ø
+ vingsark\, slides): github.com/isabelhovdahl/TECH2 (uke 34–39) og github
+ .com/richardfoltyn/TECH2-H26 (uke 40–45). Lenker per uke ligger under Mo
+ dules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261211-1200-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261211T120000
 DTEND;TZID=Europe/Oslo:20261211T173000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – øvinger uke 40–42
+SUMMARY:Grinde på SAL: TECH2 – øvinger uke 37–39
 DESCRIPTION:Gjør øvingsarkene på nytt uten å se på løsningen først. 
  Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): github.com/i
  sabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uk
@@ -4585,7 +4434,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261211-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261211T200000
 DTEND;TZID=Europe/Oslo:20261211T201500
 TRANSP:OPAQUE
@@ -4595,23 +4444,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261212-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261212T050000
 DTEND;TZID=Europe/Oslo:20261212T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261212-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261212-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261212-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261212T052000
 DTEND;TZID=Europe/Oslo:20261212T060000
 TRANSP:OPAQUE
@@ -4620,24 +4462,26 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261212-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261212T060000
 DTEND;TZID=Europe/Oslo:20261212T120000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – repetisjon uke 43–45
-DESCRIPTION:uke 43–45: grouping and aggregation\, concatenating and mergi
- ng\, AI week. Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides)
- : github.com/isabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn
- /TECH2-H26 (uke 40–45). Lenker per uke ligger under Modules på Canvas.
+SUMMARY:Grinde på SAL: TECH2 – uke 45 AI week + repetisjon NumPy/pandas/
+ plotting
+DESCRIPTION:AI week (uke 45)\; repetisjon av NumPy\, pandas\, plotting\, gr
+ ouping/aggregation\, concatenating/merging (uke 40–44). Materiale (Jupyt
+ er-notebooks\, skript\, øvingsark\, slides): github.com/isabelhovdahl/TEC
+ H2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uke 40–45). Lenk
+ er per uke ligger under Modules på Canvas.
 CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261212-1200-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261212T120000
 DTEND;TZID=Europe/Oslo:20261212T170000
 TRANSP:OPAQUE
-SUMMARY:Grinde på SAL: TECH2 – øvinger uke 43–45
+SUMMARY:Grinde på SAL: TECH2 – øvinger uke 40–45
 DESCRIPTION:Gjør øvingsarkene på nytt uten å se på løsningen først. 
  Materiale (Jupyter-notebooks\, skript\, øvingsark\, slides): github.com/i
  sabelhovdahl/TECH2 (uke 34–39) og github.com/richardfoltyn/TECH2-H26 (uk
@@ -4646,7 +4490,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261212-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261212T200000
 DTEND;TZID=Europe/Oslo:20261212T201500
 TRANSP:OPAQUE
@@ -4656,23 +4500,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261213-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261213T050000
 DTEND;TZID=Europe/Oslo:20261213T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261213-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261213-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261213-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261213T052000
 DTEND;TZID=Europe/Oslo:20261213T060000
 TRANSP:OPAQUE
@@ -4681,7 +4518,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261213-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261213T060000
 DTEND;TZID=Europe/Oslo:20261213T090000
 TRANSP:OPAQUE
@@ -4696,7 +4533,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261213-0900-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261213T090000
 DTEND;TZID=Europe/Oslo:20261213T110000
 TRANSP:OPAQUE
@@ -4706,7 +4543,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261213-1100-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261213T110000
 DTEND;TZID=Europe/Oslo:20261213T170000
 TRANSP:OPAQUE
@@ -4718,7 +4555,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261213-1730-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261213T173000
 DTEND;TZID=Europe/Oslo:20261213T183000
 TRANSP:OPAQUE
@@ -4727,7 +4564,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261213-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261213T200000
 DTEND;TZID=Europe/Oslo:20261213T201500
 TRANSP:OPAQUE
@@ -4737,23 +4574,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T050000
 DTEND;TZID=Europe/Oslo:20261214T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261214-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261214-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T052000
 DTEND;TZID=Europe/Oslo:20261214T060000
 TRANSP:OPAQUE
@@ -4762,7 +4592,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T060000
 DTEND;TZID=Europe/Oslo:20261214T090000
 TRANSP:OPAQUE
@@ -4777,7 +4607,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-0900-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T090000
 DTEND;TZID=Europe/Oslo:20261214T110000
 TRANSP:OPAQUE
@@ -4787,7 +4617,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-1100-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T110000
 DTEND;TZID=Europe/Oslo:20261214T113000
 TRANSP:OPAQUE
@@ -4799,7 +4629,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T113000
 DTEND;TZID=Europe/Oslo:20261214T133000
 TRANSP:OPAQUE
@@ -4811,7 +4641,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T133000
 DTEND;TZID=Europe/Oslo:20261214T190000
 TRANSP:OPAQUE
@@ -4823,7 +4653,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261214-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261214T200000
 DTEND;TZID=Europe/Oslo:20261214T201500
 TRANSP:OPAQUE
@@ -4833,23 +4663,16 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-0500-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T050000
 DTEND;TZID=Europe/Oslo:20261215T052000
 TRANSP:OPAQUE
 SUMMARY:Våkne for faen - Grindetid
 CATEGORIES:ROUTINE
-BEGIN:VALARM
-UID:20261215-0500-ROUTINE-alarm
-X-WR-ALARMUID:20261215-0500-ROUTINE-alarm
-ACTION:DISPLAY
-DESCRIPTION:Våkne for faen - Grindetid
-TRIGGER:PT0S
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-0520-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T052000
 DTEND;TZID=Europe/Oslo:20261215T060000
 TRANSP:OPAQUE
@@ -4858,7 +4681,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-0600-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T060000
 DTEND;TZID=Europe/Oslo:20261215T090000
 TRANSP:OPAQUE
@@ -4873,7 +4696,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-0900-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T090000
 DTEND;TZID=Europe/Oslo:20261215T110000
 TRANSP:OPAQUE
@@ -4883,7 +4706,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-1100-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T110000
 DTEND;TZID=Europe/Oslo:20261215T113000
 TRANSP:OPAQUE
@@ -4895,7 +4718,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-1130-GYM@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T113000
 DTEND;TZID=Europe/Oslo:20261215T133000
 TRANSP:OPAQUE
@@ -4907,7 +4730,7 @@ CATEGORIES:GYM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-1330-TECH2@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T133000
 DTEND;TZID=Europe/Oslo:20261215T190000
 TRANSP:OPAQUE
@@ -4919,7 +4742,7 @@ CATEGORIES:TECH2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261215-2000-ROUTINE@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;TZID=Europe/Oslo:20261215T200000
 DTEND;TZID=Europe/Oslo:20261215T201500
 TRANSP:OPAQUE
@@ -4929,7 +4752,7 @@ CATEGORIES:ROUTINE
 END:VEVENT
 BEGIN:VEVENT
 UID:20261216-heldag-EXAM-86738ce6@grindeplan-h26
-DTSTAMP:20261027T194803Z
+DTSTAMP:20261031T121947Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 TRANSP:TRANSPARENT
