@@ -39,7 +39,7 @@ the old files (GitHub → Add file → Upload files → Commit changes). The sub
 
 **Weekdays before 23.11:** wake 05:15 · run 05:35–06:15 · shower + to NHH · sal 07:00–19:00 Mon–Thu,
 07:00–18:00 Fri · bed 20:00. No running after school, no dinner block. Evenings before a BUD1 sal session:
-bedtime reading 20:00–21:00 (see BUD1).
+bedtime reading 19:30–20:30 (see BUD1).
 
 **Workout on weekdays:** 2 h "Være på gymmen" inside the school day, around 11:30–13:30. It is placed where TECH1 ends
 (10:30–12:30) so it also serves as the course-change break, and moved around lectures and workshops.
@@ -56,7 +56,7 @@ Sun 1.11 is a restart day: TECH1 10:00–14:00 (from 6.5) and BUD1 14:30–16:00
 
 **TECH1:** non-chapter work 27–28.10; the planned sections were not done 29–30.10 (Stig worked on ch. 12–13 instead),
 so the Sydsæter sections (outline syllabus, no 9.4, no 12.10) restart from 6.5 on Sun 1.11 and run evenly to 22.11
-(ch. 12–13 kept in the plan); 26–30.11 mock exams + filling gaps only. Exam 1.12.
+(ch. 12–13 count as done until the revision week 26–30.11); 26–30.11 mock exams + filling gaps only. Exam 1.12.
 
 **TECH2:** no self-study in week 44 – replaced by TECH1 (lecture 28.10 and workshop 30.10 kept);
 from 2.11 2.5 h/day rising to 4 h/day until 18.11, review 19–22.11, home exam 23–25.11 (nothing else).
@@ -65,7 +65,7 @@ git/VS Code and AI week (45) wait until after the BUD1 exam: 10–11.12 learn ba
 13–15.12 mock exams. Exam 16.12. No TECH2 lectures/workshops after week 45 (lecture 4.11, workshop 6.11 kept).
 
 **BUD1:** not started 27.10–31.10; Drury ch. 1–10, 12, 14–16 restart from ch. 1 on Sun 1.11 and run evenly by pages
-to 20.11 (must be done by 23.11). The evening before each BUD1 sal session: bedtime reading 20:00–21:00 of that
+to 20.11 (must be done by 23.11). The evening before each BUD1 sal session: bedtime reading 19:30–20:30 of that
 session's pages (skip assessment material); the sal session is for the important points and the exercises.
 26–30.11 only 30 min revision 19:30–20:00; 2–8.12 7 h/day mock exams (rest of the day = catch-up); exam 9.12 09:00–12:00.
 

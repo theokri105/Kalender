@@ -40,7 +40,7 @@ FINAL_START = date(2026, 11, 23)      # sal 06:00-17:30 (helg 17:00), ingen gym
 # hvor langt hvert fag var planlagt før den dagen (BUD1 i sider, TECH1 i seksjonsvekt, TECH2 i ukeemner).
 FREEZE_DATE = date(2026, 11, 1)
 LOCKED = {"BUD1": 0, "TECH1": 0.0, "TECH2": 0.0}    # 31.10: TECH1 og BUD1 starter på nytt fra begynnelsen 1.11
-BEDTIME_READING = ("20:00", "21:00")   # kveldslesing BUD1 kvelden før hver BUD1-økt på sal
+BEDTIME_READING = ("19:30", "20:30")   # kveldslesing BUD1 kvelden før hver BUD1-økt på sal
 TECH1_CHAPTERS_FROM = date(2026, 10, 29)
 TECH2_REVIEW_FROM = date(2026, 11, 19)
 
@@ -131,6 +131,9 @@ TECH1_SECTIONS = [
     ("13.11", "Diagonalization", 1),
     ("13.12", "Quadratic Forms", 1),
 ]
+
+# Kap. 12-13 regnes som ferdige fram til revisjonsuka 26.-30.11 (Stig 31.10)
+TECH1_ACTIVE = [x for x in TECH1_SECTIONS if not x[0].startswith(("12.", "13."))]
 
 # BUD1: Drury, Management Accounting for Business, 9. utg. Pensum kap. 1-10, 12, 14-16
 # (BUD1-plan). Seksjoner og sidetall fra Stigs bilder av innholdsfortegnelsen.
@@ -808,7 +811,7 @@ def compact_sections(ids: list[str]) -> str:
 
 
 def allocate_tech1(blocks: list[Ev], a0: float = 0.0, a1: float | None = None):
-    items = TECH1_SECTIONS
+    items = TECH1_ACTIVE
     W = sum(w for *_, w in items)
     a1 = W if a1 is None else a1
     T = sum(dur(b) for b in blocks)
@@ -1028,7 +1031,7 @@ def build() -> list[Ev]:
 
     if any(e.d < TECH1_CHAPTERS_FROM for e in q("TECH1")):
         raise ValueError("TECH1-kapittelblokk før kapittelstart")
-    totals = {"TECH1": sum(w for *_, w in TECH1_SECTIONS), "BUD1": bud1_points()[2],
+    totals = {"TECH1": sum(w for *_, w in TECH1_ACTIVE), "BUD1": bud1_points()[2],
               "TECH2": float(len(TECH2_FOCUS))}
     allocs = {"TECH1": allocate_tech1, "BUD1": allocate_bud1, "TECH2": allocate_tech2}
     for name in ("TECH1", "BUD1", "TECH2"):
@@ -1048,10 +1051,10 @@ def build() -> list[Ev]:
             continue
         pages = b.title.split(" - ", 1)[1]
         reading = [x for x in b.detail.split("; ") if "Assessment material" not in x]
-        bed.title = f"Leggetid + kveldslesing BUD1: {pages}"
+        bed.title = f"Kveldslesing BUD1 + leggetid: {pages}"
         bed.start, bed.end = BEDTIME_READING
         bed.kind = "BUD1READ"
-        bed.desc = ("I seng kl. 20:00, lys av 21:00. Les sidene til morgendagens BUD1-økt (hopp over Assessment "
+        bed.desc = ("Kveldslesing 19:30-20:30, lys av 20:30. Les sidene til morgendagens BUD1-økt (hopp over Assessment "
                     "material - oppgavene tar du på sal):\n" + "\n".join(reading))
         bed.detail = "; ".join(reading)
     events.sort(key=lambda e: (e.d, e.start is not None, mins(e.start) if e.start else 0))
